@@ -54,20 +54,88 @@ call_count = 0
 
 
 # TODO Add your threaded class definition here
+class Request_thread(threading.Thread):
+
+    def __init__(self, url):
+        # Call the Thread class's init function
+        threading.Thread.__init__(self)
+        self.url = url
+        self.response = {}
+
+    def run(self):
+        response = requests.get(self.url)
+        global call_count 
+        # Check the status code to see if the request succeeded.
+        if response.status_code == 200:
+            call_count += 1
+            self.response = response.json()
+        else:
+            print('RESPONSE = ', response.status_code)
 
 
 # TODO Add any functions you need here
+def displaysort(urls:list):
+  threads = []
+  names = []
+  for url in urls:
+      obj = Request_thread(url)
+      threads.append(obj)
+  
+  for thread in threads:
+      thread.start()
 
+  for thread in threads:
+      thread.join()
 
+  for objs in threads:
+       names.append(objs.response["name"])
+  
+  names.sort()
+
+  return names
+      
 def main():
     log = Log(show_terminal=True)
     log.start_timer('Starting to retrieve data from the server')
 
     # TODO Retrieve Top API urls
+    topapi = Request_thread(TOP_API_URL)
+    topapi.start()
+    topapi.join()
 
     # TODO Retireve Details on film 6
+    movie6 = Request_thread(f'{topapi.response["films"]}6')
+    movie6.start()
+    movie6.join()
 
     # TODO Display results
+    log.write("-----------------------------------------")
+    log.write(f'Title   : {movie6.response["title"]}')
+    log.write(f'Director: {movie6.response["director"]}')
+    log.write(f'Producer: {movie6.response["producer"]}')
+    log.write(f'Released: {movie6.response["release_date"]}')
+    log.write("")
+    characters = displaysort(movie6.response["characters"])
+    planets = displaysort(movie6.response["planets"])
+    starships = displaysort(movie6.response["starships"])
+    vehicles = displaysort(movie6.response["vehicles"])
+    species = displaysort(movie6.response["species"])
+
+    log.write(f'Characters :{len(characters)}')
+    log.write(", ".join(characters))
+    log.write("")
+    log.write(f'Planets :{len(planets)}')
+    log.write(", ".join(planets))
+    log.write("")
+    log.write(f'Starships :{len(starships)}')
+    log.write(", ".join(starships))
+    log.write("")
+    log.write(f'Vehicles :{len(vehicles)}')
+    log.write(", ".join(vehicles))
+    log.write("")
+    log.write(f'Species :{len(species)}')
+    log.write(", ".join(species))
+    log.write("")
 
     log.stop_timer('Total Time To complete')
     log.write(f'There were {call_count} calls to the server')
