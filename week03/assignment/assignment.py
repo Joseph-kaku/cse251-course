@@ -3,7 +3,7 @@
 Course: CSE 251
 Lesson Week: 03
 File: assignment.py
-Author: <Your Name>
+Author: Joseph Kaku
 
 Purpose: Video Frame Processing
 
@@ -78,7 +78,7 @@ if __name__ == '__main__':
     #      add results to xaxis_cpus and yaxis_times
 
 
-    # sample code: remove before submitting  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    # sample code: remove before submitting  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     # process one frame #10
     image_number = 10
 
@@ -89,7 +89,7 @@ if __name__ == '__main__':
     start_time = timeit.default_timer()
     create_new_frame(image_file, green_file, process_file)
     print(f'\nTime To Process all images = {timeit.default_timer() - start_time}')
-    # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+    # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 
     log.write(f'Total Time for ALL processing: {timeit.default_timer() - all_process_time}')
