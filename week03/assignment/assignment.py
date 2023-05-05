@@ -73,8 +73,11 @@ def create_processed_frames():
 
 def split_image(frames):
     image_file = frames[0]
+    # print(image_file)
     green_file = frames[1]
+    # print(green_file)
     processed_file = frames[2]
+    # print(processed_file)
     create_new_frame(image_file, green_file, processed_file)
 
 if __name__ == '__main__':
@@ -92,6 +95,8 @@ if __name__ == '__main__':
 
     frames = create_processed_frames()
 
+    print(frames)
+ 
     for core in range(1, CPU_COUNT + 1):
         with mp.Pool(core) as p:
             start_time = timeit.default_timer()
