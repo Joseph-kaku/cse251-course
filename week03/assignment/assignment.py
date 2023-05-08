@@ -95,7 +95,7 @@ if __name__ == '__main__':
 
     frames = create_processed_frames()
 
-    print(frames)
+    # print(frames)
  
     for core in range(1, CPU_COUNT + 1):
         with mp.Pool(core) as p:
