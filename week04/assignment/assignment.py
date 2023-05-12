@@ -79,6 +79,7 @@ class Factory(threading.Thread):
     def __init__(self, car_queue:Queue251, factory_sem:threading.Semaphore, dealership_sem:threading.Semaphore, lock):
         # TODO, you need to add arguments that will pass all of data that 1 factory needs
         # to create cars and to place them in a queue.
+        threading.Thread.__init__(self)
         self.queue = car_queue
         self.factory_sem = factory_sem
         self.dealership_sem = dealership_sem
@@ -92,7 +93,7 @@ class Factory(threading.Thread):
             with self.lock:
                 car = Car()
                 self.queue.put(car)
-            self.factory_sem.release() #giving the dealer a car. realease is +1
+            self.factory_sem.release() #giving the dealer a car. release is +1
     
         self.dealership_sem.acquire() # blocked because last full queue
         self.queue.put("no more cars") #signaling that cars are done.   
@@ -104,20 +105,24 @@ class Factory(threading.Thread):
 class Dealer(threading.Thread):
     """ This is a dealer that receives cars """
 
-    def __init__(self, car_queue:Queue251, dealership_sem:threading.Semaphore, factory_sem:threading.Semaphore, lock):
+    def __init__(self, car_queue:Queue251, dealership_sem:threading.Semaphore, factory_sem:threading.Semaphore, lock, queue_stats):
+        threading.Thread.__init__(self)
         self.car_queue = car_queue
         self.dealership_sem = dealership_sem
         self.factory_sem = factory_sem
         self.lock = lock
+        self.queue_stats = queue_stats
+        
         # TODO, you need to add arguments that pass all of data that 1 Dealer needs
         # to sell a car
         
 
     def run(self):
         while True:
-            self.factory_sem.acquire() #telling dealer to check if there's a spot for a car
-            with self.lock:
-                car = self.car_queue.get()
+            self.factory_sem.acquire() #telling dealer to check if there's a spot for a car.
+            with self.lock: 
+                car = self.car_queue.get() # dealer receives car
+                self.queue_stats[(self.car_queue.size())] +=1 
                 if car == "no more cars":
                     break
             # TODO Add your code here
@@ -157,7 +162,7 @@ def main():
     
 
     # TODO create your one dealership
-    dealership = Dealer(car_queue, dealership_sem, factory_sem, lock)
+    dealership = Dealer(car_queue, dealership_sem, factory_sem, lock, queue_stats)
 
     log.start_timer()
 
