@@ -2,7 +2,7 @@
 Course: CSE 251
 Lesson Week: 04
 File: assignment.py
-Author: <Your name>
+Author: Joseph Kaku
 
 Purpose: Assignment 04 - Factory and Dealership
 
