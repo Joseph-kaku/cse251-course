@@ -2,7 +2,7 @@
 Course: CSE 251
 Lesson Week: 05
 File: assignment.py
-Author: <Your name>
+Author: Joseph Kaku
 
 Purpose: Assignment 05 - Factories and Dealers
 
@@ -25,6 +25,7 @@ from datetime import datetime, timedelta
 import time
 import threading
 import random
+import multiprocessing as mp
 
 # Include cse 251 common Python files
 from cse251 import *
@@ -87,12 +88,15 @@ class Queue251():
 class Factory(threading.Thread):
     """ This is a factory.  It will create cars and place them on the car queue """
 
-    def __init__(self):
+    def __init__(self, car_queue:Queue251, factory_sem:threading.Semaphore, dealership_sem:threading.Semaphore):
         self.cars_to_produce = random.randint(200, 300)     # Don't change
-
+        threading.Thread.__init__(self)
+        self.queue = car_queue
+        self.factory_sem = factory_sem
+        self.dealership_sem = dealership_sem
 
     def run(self):
-        # TODO produce the cars, the send them to the dealerships
+        # TODO produce the cars, then send them to the dealerships
 
         # TODO wait until all of the factories are finished producing cars
 
@@ -104,8 +108,11 @@ class Factory(threading.Thread):
 class Dealer(threading.Thread):
     """ This is a dealer that receives cars """
 
-    def __init__(self):
-        pass
+    def __init__(self, car_queue:Queue251, dealership_sem:threading.Semaphore, factory_sem:threading.Semaphore):
+        threading.Thread.__init__(self)
+        self.car_queue = car_queue
+        self.dealership_sem = dealership_sem
+        self.factory_sem = factory_sem
 
     def run(self):
         while True:
@@ -122,12 +129,20 @@ def run_production(factory_count, dealer_count):
     """
 
     # TODO Create semaphore(s) if needed
+    factory_sem = threading.Semaphore(0)
+    dealership_sem = threading.Semaphore(10)
+
     # TODO Create queue
+    master_queue = Queue251
+    shared_q = mp.Queue()
+
     # TODO Create lock(s) if needed
     # TODO Create barrier
+    barrier = mp.Barrier(2)
 
     # This is used to track the number of cars receives by each dealer
     dealer_stats = list([0] * dealer_count)
+    factory_stats = list([0] * factory_count)
 
     # TODO create your factories, each factory will create CARS_TO_CREATE_PER_FACTORY
 
@@ -160,7 +175,7 @@ def main(log):
         log.write(f'Dealerships    : {dealerships}')
         log.write(f'Run Time       : {run_time:.4f}')
         log.write(f'Max queue size : {max_queue_size}')
-        log.write(f'Factor Stats   : {factory_stats}')
+        log.write(f'Factory Stats   : {factory_stats}')
         log.write(f'Dealer Stats   : {dealer_stats}')
         log.write('')
 
