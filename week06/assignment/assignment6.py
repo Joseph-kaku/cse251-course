@@ -2,7 +2,7 @@
 Course: CSE 251
 Lesson Week: 06
 File: assignment.py
-Author: <Your name here>
+Author: Joseph Kaku
 Purpose: Processing Plant
 Instructions:
 - Implement the classes to allow gifts to be created.
@@ -80,9 +80,12 @@ class Marble_Creator(mp.Process):
         'Brown', 'Gold', 'Blue-Green', 'Antique Bronze', 'Mint Green', 'Royal Blue', 
         'Light Orange', 'Pastel Blue', 'Middle Green')
 
-    def __init__(self):
+    def __init__(self, marble_giv, marbles_to_create, creator_delay):
         mp.Process.__init__(self)
         # TODO Add any arguments and variables here
+        self.marbles_to_create = marbles_to_create
+        self.sender = marble_giv
+        self.delay = creator_delay
 
     def run(self):
         '''
@@ -92,15 +95,24 @@ class Marble_Creator(mp.Process):
             sleep the required amount
         Let the bagger know there are no more marbles
         '''
-        pass
+        for _ in range(self.marbles_to_create):
+            self.sender.send(random.choice(Marble_Creator.colors))
+            time.sleep(self.delay)
+        self.sender.send('fin')
+        self.sender.close()
+        print('\nCREATOR FINISHED\n')
 
 
 class Bagger(mp.Process):
     """ Receives marbles from the marble creator, then there are enough
         marbles, the bag of marbles are sent to the assembler """
-    def __init__(self):
+    def __init__(self, marble_get, bagger_giv, bagger_delay, count_in_bag):
         mp.Process.__init__(self)
         # TODO Add any arguments and variables here
+        self.receiver = marble_get
+        self.sender = bagger_giv
+        self.delay = bagger_delay
+        self.count_in_bag = count_in_bag
 
     def run(self):
         '''
@@ -110,6 +122,22 @@ class Bagger(mp.Process):
             sleep the required amount
         tell the assembler that there are no more bags
         '''
+        marbles_bagged = list()
+        while True:
+            # get marbles from pipe
+            value = self.receiver.recv() 
+            if value == 'fin':
+                break
+            marbles_bagged.append(value)
+            if len(marbles_bagged) == self.count_in_bag:
+                self.sender.send(marbles_bagged)
+                marbles_bagged.clear()
+            time.sleep(self.delay)
+
+        self.sender.send('fin')
+        self.receiver.close()
+        self.sender.close()
+        print('\nBAGGER FINISHED\n')
 
 
 class Assembler(mp.Process):
@@ -117,9 +145,12 @@ class Assembler(mp.Process):
         Sends the completed gift to the wrapper """
     marble_names = ('Lucky', 'Spinner', 'Sure Shot', 'Big Joe', 'Winner', '5-Star', 'Hercules', 'Apollo', 'Zeus')
 
-    def __init__(self):
+    def __init__(self, bagger_get, assemble_giv, assembler_delay):
         mp.Process.__init__(self)
         # TODO Add any arguments and variables here
+        self.receiver = bagger_get
+        self.sender = assemble_giv
+        self.delay = assembler_delay
 
     def run(self):
         '''
@@ -129,13 +160,30 @@ class Assembler(mp.Process):
             sleep the required amount
         tell the wrapper that there are no more gifts
         '''
+        while True:
+            value = self.receiver.recv()
+            if value == 'fin':
+                break
+            value.append(random.choice(Assembler.marble_names))
+            self.sender.send(value)
+            time.sleep(self.delay)
+
+        self.sender.send('fin')
+        self.receiver.close()
+        self.sender.close()
+        print('\nBAGGER FINISHED\n')
 
 
 class Wrapper(mp.Process):
     """ Takes created gifts and wraps them by placing them in the boxes file """
-    def __init__(self):
+    def __init__(self, assembler_get, filename, wrapper_delay, shared_counter):
         mp.Process.__init__(self)
         # TODO Add any arguments and variables here
+        self.receiver = assembler_get
+        self.filename = filename
+        self.delay = wrapper_delay
+        self.shared_counter = shared_counter
+        self.gift_counter = 0
 
     def run(self):
         '''
@@ -144,6 +192,23 @@ class Wrapper(mp.Process):
             save gift to the file with the current time
             sleep the required amount
         '''
+        with open(self.filename, 'w') as f:
+            while True:
+                value = self.receiver.recv()
+                if value == 'fin':
+                    break
+
+                f.write('Created - ' + str(datetime.now().time()) + ': Large marble: ')
+                f.write(value.pop()+', marbles: ')
+                for x in value:
+                    f.write(x + ', ')
+                f.write('\n\r')
+                self.gift_counter += 1
+                time.sleep(self.delay)
+        self.receiver.close()
+        self.shared_counter[0] += self.gift_counter 
+        print('\nWRAPPER FINISHED\n')
+
 
 
 def display_final_boxes(filename, log):
@@ -179,8 +244,12 @@ def main():
     log.write(f'Wrapper delay    = {settings[WRAPPER_DELAY]}')
 
     # TODO: create Pipes between creator -> bagger -> assembler -> wrapper
+    marble_giv, marble_get = mp.Pipe()
+    bagger_giv, bagger_get = mp.Pipe()
+    assemble_giv, assemble_get = mp.Pipe()
 
     # TODO create variable to be used to count the number of gifts
+    gift_counter = mp.Manager().list([0])
 
     # delete final boxes file
     if os.path.exists(BOXES_FILENAME):
@@ -189,17 +258,29 @@ def main():
     log.write('Create the processes')
 
     # TODO Create the processes (ie., classes above)
+    creator = Marble_Creator(marble_giv, settings['marble-count'], settings['creator-delay'])
+    bagger = Bagger(marble_get, bagger_giv, settings['bagger-delay'], settings['bag-count'])
+    assembler = Assembler(bagger_get, assemble_giv, settings['assembler-delay'])
+    wrapper = Wrapper(assemble_get, BOXES_FILENAME, settings['wrapper-delay'], gift_counter)
 
     log.write('Starting the processes')
     # TODO add code here
+    creator.start()
+    bagger.start()
+    assembler.start()
+    wrapper.start()
 
     log.write('Waiting for processes to finish')
     # TODO add code here
+    creator.join()
+    bagger.join()
+    assembler.join()
+    wrapper.join()
 
     display_final_boxes(BOXES_FILENAME, log)
     
     # TODO Log the number of gifts created.
-
+    log.write(f'\t{gift_counter[0]} gifts were created')
 
 
 

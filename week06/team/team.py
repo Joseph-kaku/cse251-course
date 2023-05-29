@@ -50,10 +50,13 @@ def are_files_same(filename1, filename2):
 
 def copy_file(log, filename1, filename2):
     # TODO create a pipe 
+    parent_conn, child_conn = mp.Pipe()
     
     # TODO create variable to count items sent over the pipe
-
+    
     # TODO create processes 
+    p1 = mp.Process(target=sender, args=(parent_conn,))
+    p2 = mp.Process(target=receiver, args=(child_conn,))
 
     log.start_timer()
     start_time = log.get_time()
