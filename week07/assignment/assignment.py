@@ -2,7 +2,7 @@
 Course: CSE 251
 Lesson Week: 07
 File: assingnment.py
-Author: <Your name here>
+Author: Joseph Kaku
 Purpose: Process Task Files
 
 Instructions:  See I-Learn
@@ -62,7 +62,10 @@ def task_prime(value):
             - or -
         {value} is not prime
     """
-    pass
+    if is_prime(value):
+        return f'{value} is prime'
+    else:
+        return f'{value} not prime'
 
 def task_word(word):
     """
@@ -72,21 +75,33 @@ def task_word(word):
             - or -
         {word} not found *****
     """
-    pass
+    with open('word.txt', 'r') as file:
+        for line in file.readlines():
+            s_lines = line.strip()
+        if word in s_lines:
+            return f'{word} found'
+        else:
+            return f'{word} not found'
+            
+
 
 def task_upper(text):
     """
     Add the following to the global list:
         {text} ==>  uppercase version of {text}
     """
-    pass
+    return f'{text.upper()} uppercase version of {text}'
 
 def task_sum(start_value, end_value):
     """
     Add the following to the global list:
         sum of {start_value:,} to {end_value:,} = {total:,}
     """
-    pass
+    sum = 0
+    for i in range(start_value, end_value + 1):
+        sum += i
+    return f'sum of {start_value:,} to {end_value:,} = {sum:,}'
+
 
 def task_name(url):
     """
@@ -96,14 +111,41 @@ def task_name(url):
             - or -
         {url} had an error receiving the information
     """
-    pass
+    response = requests.get(url)
+    if response.status_code == 200:
+        data = response.json()
+        return f"{url} has name {data['name']}"
+    else:
+        f'{url} had an error receiving the information'
 
+#Callback Functions
+
+def callback_task_prime(result):
+    result_primes.append(result)
+
+def callback_task_word(result):
+    result_words.append(result)
+    
+def callback_task_upper(result):
+    result_upper.append(result)     
+
+def callback_task_sum(result):
+    result_sums.append(result)
+
+def callback_task_name(result):
+    result_names.append(result)
 
 def main():
     log = Log(show_terminal=True)
     log.start_timer()
 
     # TODO Create process pools
+
+    prime_task_pool = mp.Pool(1)
+    word_task_pool = mp.Pool(1)
+    upper_task_pool = mp.Pool(1)
+    sum_task_pool = mp.Pool(1)
+    name_task_pool = mp.Pool(1)
 
     # TODO you can change the following
     # TODO start and wait pools
@@ -118,18 +160,36 @@ def main():
         count += 1
         task_type = task['task']
         if task_type == TYPE_PRIME:
-            task_prime(task['value'])
+            prime_task_pool.apply_async(task_prime, args=(task['value'], ), callback=callback_task_prime)
+            # task_prime(task['value'])
         elif task_type == TYPE_WORD:
-            task_word(task['word'])
+            word_task_pool.apply_async(task_word, args=(task['word'], ), callback=callback_task_word)
+            # task_word(task['word'])
         elif task_type == TYPE_UPPER:
-            task_upper(task['text'])
+            upper_task_pool.apply_async(task_upper, args=(task['text'], ), callback=callback_task_upper)
+            # task_upper(task['text'])
         elif task_type == TYPE_SUM:
-            task_sum(task['start'], task['end'])
+            sum_task_pool.apply_async(task_sum, args=(task['start'], task['end'] ), callback=callback_task_sum)
+            # task_sum(task['start'], task['end'])
         elif task_type == TYPE_NAME:
-            task_name(task['url'])
+            name_task_pool.apply_async(task_name, args=(task['url'], ), callback=callback_task_name)
+            # task_name(task['url'])
         else:
             log.write(f'Error: unknown task type {task_type}')
 
+    #close all pools
+    prime_task_pool.close()
+    word_task_pool.close()
+    upper_task_pool.close()
+    sum_task_pool.close()
+    name_task_pool.close()
+    
+    #join all pools
+    prime_task_pool.join()
+    word_task_pool.join()
+    upper_task_pool.join()
+    sum_task_pool.join()
+    name_task_pool.join()
 
 
     # Do not change the following code (to the end of the main function)
