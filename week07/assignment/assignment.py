@@ -39,6 +39,8 @@ result_upper = []
 result_sums = []
 result_names = []
 
+CPU_COUNT = mp.cpu_count() + 4
+
 def is_prime(n: int):
     """Primality test using 6k+-1 optimization.
     From: https://en.wikipedia.org/wiki/Primality_test
@@ -75,9 +77,10 @@ def task_word(word):
             - or -
         {word} not found *****
     """
-    with open('word.txt', 'r') as file:
+    with open('words.txt', 'r') as file:
+        s_lines = []
         for line in file.readlines():
-            s_lines = line.strip()
+            s_lines.append(line.strip())
         if word in s_lines:
             return f'{word} found'
         else:
@@ -141,10 +144,10 @@ def main():
 
     # TODO Create process pools
 
-    prime_task_pool = mp.Pool(1)
+    prime_task_pool = mp.Pool(3)
     word_task_pool = mp.Pool(1)
     upper_task_pool = mp.Pool(1)
-    sum_task_pool = mp.Pool(1)
+    sum_task_pool = mp.Pool(2)
     name_task_pool = mp.Pool(1)
 
     # TODO you can change the following
@@ -176,6 +179,8 @@ def main():
             # task_name(task['url'])
         else:
             log.write(f'Error: unknown task type {task_type}')
+
+    print(CPU_COUNT)
 
     #close all pools
     prime_task_pool.close()
