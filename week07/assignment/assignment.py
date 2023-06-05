@@ -9,9 +9,19 @@ Instructions:  See I-Learn
 
 TODO
 
-Add your comments here on the pool sizes that you used for your assignment and
-why they were the best choices.
+I used the following as my process pools: 
+prime_task_pool = mp.Pool(3)
+word_task_pool = mp.Pool(1)
+upper_task_pool = mp.Pool(1)
+sum_task_pool = mp.Pool(2)
+name_task_pool = mp.Pool(1)
 
+- I decided to use 3 for the first because it involves looking up 
+  a bunch of numbers and comparing to see if they are primes
+
+- I used 1 for the 2nd, 3rd and 5th tasks because they did not involve much
+
+- I used 2 for the sum task because it involved adding a lot of numbers as well.
 
 """
 
