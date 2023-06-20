@@ -76,18 +76,12 @@ def get_color():
 
 def solve_path(maze, start, color, path_found, lock):
 
-    #To include the start thread in the thread_count
     global thread_count
-    
-    #Create a list of threads we are going to use
     threads = list()
     (row_start,col_start) = start
 
-    #With a while loop we have to loop through till the end
     while True:
-        #checks to see if no more moves can be made
         if not maze.can_move_here(row_start,col_start) or path_found[0]:
-            #Then we join all the threads at this point
             join_threads = list([i for i in threads])
             for i in join_threads:
                 i.join() 
@@ -124,7 +118,6 @@ def solve_path(maze, start, color, path_found, lock):
                 
                 threads.extend(new_threads)
 
-                
                 for thread in new_threads:
                     thread.start() 
                 (row_start, col_start) = possible_moves[-1]
@@ -135,30 +128,22 @@ def solve_path(maze, start, color, path_found, lock):
 
 def solve_find_end(maze):
     """ finds the end position using threads.  Nothing is returned """
-
    
     global thread_count
-
     
     path_solved = list([False])
-
     
     start_position = maze.get_start_pos()
-
     
     color = get_color()
-
    
     lock = threading.Lock()
     
-    
     begin_thread = threading.Thread(target = solve_path,
         args = (maze, start_position, color, path_solved, lock))
-    
    
     threads = list([begin_thread])
     thread_count+=1
-
 
     for i  in threads:
         i.start()
