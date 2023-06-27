@@ -2,7 +2,7 @@
 Course: CSE 251
 Lesson Week: 10
 File: assignment.py
-Author: <your name>
+Author: Joseph Kaku
 
 Purpose: assignment for week 10 - reader writer problem
 
@@ -57,6 +57,7 @@ Add any comments for me:
 
 """
 
+from multiprocessing import shared_memory
 import random
 from multiprocessing.managers import SharedMemoryManager
 import multiprocessing as mp
@@ -64,6 +65,42 @@ import multiprocessing as mp
 BUFFER_SIZE = 10
 READERS = 2
 WRITERS = 2
+
+
+def write(writeSem, readSem, lock, sharedList):
+    while True:
+      writeSem.acquire()
+
+      with lock:
+        if sharedList[12] and sharedList[13]:
+          sharedList[13] == 1
+          break
+
+        index = sharedList[11] % BUFFER_SIZE
+        sharedList[index] = sharedList[12] + 1
+        sharedList[11] = index + 1
+        sharedList[12] += 1
+
+      readSem.release()
+      readSem.release()
+
+
+def read(readSem, writeSem, lock, sharedList):
+    while True:
+      readSem.acquire()
+
+      with lock:
+          if (sharedList[13] and sharedList[10] == sharedList[11]):
+             break
+          
+          index = sharedList[10] % BUFFER_SIZE
+          print(sharedList[index], end=', ', flush= True)
+          sharedList[10] = index + 1
+          sharedList[13] += 1
+
+      writeSem.release()
+
+
 
 def main():
 
@@ -84,13 +121,38 @@ def main():
     #        track of the number of values received by the readers.
     #        (ie., [0] * (BUFFER_SIZE + 4))
 
+    #                         10    11      12        13        14
+    # [0,1,2,3,4,5,6,7,8,9, FRONT, BACK, recvCOUNT, MakeNum, isDone]
+
+
+    sharedlist = smm.ShareableList([0]*14)
+    sharedlist[13] = items_to_send
+
+    # sharedlist[10] = 0
+    # sharedlist[11] = 0
+    # sharedlist[12] = 1
+    # sharedlist[13] = items_to_send
+
     # TODO - Create any lock(s) or semaphore(s) that you feel you need
+    lock = mp.Lock()
+    readSem = mp.Semaphore(10)
+    writeSem = mp.Semaphore(10)
 
     # TODO - create reader and writer processes
+    readProcess = mp.Process(target=read, args=(readSem, writeSem, lock, sharedlist))
+    writeProcess = mp.Process(target=write, args=(readSem, writeSem, lock, sharedlist))
 
     # TODO - Start the processes and wait for them to finish
+     
+    readProcess.start()
+    writeProcess.start()
+
+    readProcess.join()
+    writeProcess.join()
+
 
     print(f'{items_to_send} values sent')
+    print(f'{sharedlist[13]} values received')
 
     # TODO - Display the number of numbers/items received by the reader.
     #        Can not use "items_to_send", must be a value collected
