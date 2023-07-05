@@ -44,17 +44,20 @@ def cleaner(id, startTime, cleanerLock, cleanedCount):
         Take some time cleaning (cleaner_cleaning())
         display message STOPPING_CLEANING_MESSAGE
     """
-    timer = time.time() - startTime
-    while (timer) < TIME:
+    while True:
+        if time.time() - startTime >= TIME:
+            break
+
         cleaner_waiting()
-        with cleanerLock:
-            print(STARTING_CLEANING_MESSAGE)
-            cleanedCount.value = cleanedCount.value + 1
-            cleaner_cleaning(id)
-            print(STOPPING_CLEANING_MESSAGE)
+        cleanerLock.acquire()
+        print(STARTING_CLEANING_MESSAGE)
+        cleanedCount.value = cleanedCount.value + 1
+        cleaner_cleaning(id)
+        print(STOPPING_CLEANING_MESSAGE)
+        cleanerLock.release()
 
 
-def guest(id, guestLock, startTime, cleanerLock, partyCount, countInRoom, count):
+def guest(id, guestLock, startTime, cleanerLock, partyCount, countInRoom):
     """
     do the following for TIME seconds
         guest will wait to try to get access to the room (guest_waiting())
@@ -63,23 +66,25 @@ def guest(id, guestLock, startTime, cleanerLock, partyCount, countInRoom, count)
         Take some time partying (call guest_partying())
         display message STOPPING_PARTY_MESSAGE if the guest is the last one leaving in the room
     """
-    timer = time.time() - startTime
-    while (timer) < TIME:
+    while True:
+        if time.time() - startTime >= TIME:
+            break
         guest_waiting()
-        with guestLock:
-            countInRoom.value = countInRoom.value + 1
-            if countInRoom.value == 1:
-                cleanerLock.acquire()
-                print(STARTING_PARTY_MESSAGE)
-                partyCount.value = partyCount.value + 1
+        guestLock.acquire()
+        countInRoom.value = countInRoom.value + 1
+        if countInRoom.value == 1:
+            cleanerLock.acquire()
+            print(STARTING_PARTY_MESSAGE)
+            partyCount.value = partyCount.value + 1
+        guestLock.release()
 
-
-        guest_partying(id, count)
-        with guestLock:
-            countInRoom.value = countInRoom.value + 1
-            if countInRoom.value == 0:
-                print(STOPPING_PARTY_MESSAGE)
-                cleanerLock.release()
+        guest_partying(id, countInRoom.value)
+        guestLock.acquire()
+        countInRoom.value = countInRoom.value - 1
+        if countInRoom.value == 0:
+            print(STOPPING_PARTY_MESSAGE)
+            cleanerLock.release()
+        guestLock.release()
 
 def main():
     # Start time of the running of the program. 
@@ -100,7 +105,7 @@ def main():
     cleaners, guests = list(),list()
 
     for i in range(CLEANING_STAFF):
-        cleaners += [mp.Process(target=cleaner, args=(i+1,startTime, cleanerLock, cleanedCount ))]
+        cleaners += [mp.Process(target=cleaner, args=(i+1,startTime, cleanerLock, cleanedCount))]
 
     for i in range(HOTEL_GUESTS):
         guests += [mp.Process(target=guest, args=(i+1, guestLock, startTime, cleanerLock, partyCount, countInRoom))]
