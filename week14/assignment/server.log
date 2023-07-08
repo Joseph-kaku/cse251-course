@@ -1,0 +1,285 @@
+Current: active threads / max count: 1 / 1
+Request: /
+Sending: {"start_family_id": 5007498342}
+Current: active threads / max count: 1 / 1
+Request: /start/6
+Creating family tree with 6 generations...
+Number of people  : 471
+Number of families: 63
+Sending: {"status":"OK"}
+Current: active threads / max count: 1 / 1
+Request: /family/5007498342
+Sending: {"id": 5007498342, "husband_id": 5007498342, "wife_id": 5016030135, "children": [5024577220, 5033108501, 4973499298, 4982038259]}
+Current: active threads / max count: 1 / 1
+Request: /
+Sending: {"start_family_id": 5007498342}
+Current: active threads / max count: 1 / 1
+Request: /start/6
+Creating family tree with 6 generations...
+Number of people  : 435
+Number of families: 63
+Sending: {"status":"OK"}
+Current: active threads / max count: 1 / 1
+Request: /family/5007498342
+Sending: {"id": 5007498342, "husband_id": 5007498342, "wife_id": 5016030135, "children": [5024577220, 5033108501, 4973499298]}
+Current: active threads / max count: 1 / 1
+Request: /
+Sending: {"start_family_id": 5007498342}
+Current: active threads / max count: 1 / 1
+Request: /start/6
+Creating family tree with 6 generations...
+Number of people  : 435
+Number of families: 63
+Sending: {"status":"OK"}
+Current: active threads / max count: 1 / 1
+Request: /family/5007498342
+Sending: {"id": 5007498342, "husband_id": 5007498342, "wife_id": 5016030135, "children": [5024577220, 5033108501, 4973499298, 4982038259, 4990307328, 4998855505, 5074495214]}
+Current: active threads / max count: 1 / 1
+Request: /
+Sending: {"start_family_id": 5007498342}
+Current: active threads / max count: 1 / 1
+Request: /start/6
+Creating family tree with 6 generations...
+Number of people  : 437
+Number of families: 63
+Sending: {"status":"OK"}
+Current: active threads / max count: 1 / 1
+Request: /family/5007498342
+Sending: {"id": 5007498342, "husband_id": 5007498342, "wife_id": 5016030135, "children": [5024577220, 5033108501, 4973499298, 4982038259, 4990307328, 4998855505]}
+Current: active threads / max count: 1 / 1
+Request: /
+Sending: {"start_family_id": 5007498342}
+Current: active threads / max count: 1 / 1
+Request: /start/6
+Creating family tree with 6 generations...
+Number of people  : 444
+Number of families: 63
+Sending: {"status":"OK"}
+Current: active threads / max count: 1 / 1
+Request: /family/5007498342
+Sending: {"id": 5007498342, "husband_id": 5007498342, "wife_id": 5016030135, "children": [5024577220, 5033108501, 4973499298, 4982038259, 4990307328, 4998855505]}
+Current: active threads / max count: 1 / 1
+Request: /
+Sending: {"start_family_id": 5007498342}
+Current: active threads / max count: 1 / 1
+Request: /start/6
+Creating family tree with 6 generations...
+Number of people  : 413
+Number of families: 63
+Sending: {"status":"OK"}
+Current: active threads / max count: 1 / 1
+Request: /family/5007498342
+Sending: {"id": 5007498342, "husband_id": 5007498342, "wife_id": 5016030135, "children": [5024577220, 5033108501, 4973499298]}
+Current: active threads / max count: 1 / 1
+Request: /
+Sending: {"start_family_id": 5007498342}
+Current: active threads / max count: 1 / 1
+Request: /start/6
+Creating family tree with 6 generations...
+Number of people  : 442
+Number of families: 63
+Sending: {"status":"OK"}
+Current: active threads / max count: 1 / 1
+Request: /family/5007498342
+Sending: {"id": 5007498342, "husband_id": 5007498342, "wife_id": 5016030135, "children": [5024577220, 5033108501, 4973499298, 4982038259, 4990307328, 4998855505]}
+Current: active threads / max count: 1 / 1
+Request: /
+Sending: {"start_family_id": 5007498342}
+Current: active threads / max count: 1 / 1
+Request: /start/6
+Creating family tree with 6 generations...
+Number of people  : 471
+Number of families: 63
+Sending: {"status":"OK"}
+Current: active threads / max count: 1 / 1
+Request: /family/5007498342
+Sending: {"id": 5007498342, "husband_id": 5007498342, "wife_id": 5016030135, "children": [5024577220, 5033108501, 4973499298, 4982038259, 4990307328]}
+Current: active threads / max count: 1 / 1
+Request: /
+Sending: {"start_family_id": 5007498342}
+Current: active threads / max count: 1 / 1
+Request: /start/6
+Creating family tree with 6 generations...
+Number of people  : 462
+Number of families: 63
+Sending: {"status":"OK"}
+Current: active threads / max count: 1 / 1
+Request: /family/5007498342
+Sending: {"id": 5007498342, "husband_id": 5007498342, "wife_id": 5016030135, "children": [5024577220, 5033108501, 4973499298, 4982038259, 4990307328, 4998855505, 5074495214]}
+Current: active threads / max count: 1 / 1
+Request: /
+Sending: {"start_family_id": 5007498342}
+Current: active threads / max count: 1 / 1
+Request: /start/6
+Creating family tree with 6 generations...
+Number of people  : 439
+Number of families: 63
+Sending: {"status":"OK"}
+Current: active threads / max count: 1 / 1
+Request: /family/5007498342
+Sending: {"id": 5007498342, "husband_id": 5007498342, "wife_id": 5016030135, "children": [5024577220, 5033108501, 4973499298, 4982038259, 4990307328, 4998855505]}
+Current: active threads / max count: 1 / 1
+Request: /
+Sending: {"start_family_id": 5007498342}
+Current: active threads / max count: 1 / 1
+Request: /start/6
+Creating family tree with 6 generations...
+Number of people  : 452
+Number of families: 63
+Sending: {"status":"OK"}
+Current: active threads / max count: 1 / 1
+Request: /family/5007498342
+Sending: {"id": 5007498342, "husband_id": 5007498342, "wife_id": 5016030135, "children": [5024577220, 5033108501, 4973499298]}
+Current: active threads / max count: 1 / 1
+Request: /
+Sending: {"start_family_id": 5007498342}
+Current: active threads / max count: 1 / 1
+Request: /start/6
+Creating family tree with 6 generations...
+Number of people  : 439
+Number of families: 63
+Sending: {"status":"OK"}
+Current: active threads / max count: 1 / 1
+Request: /family/5007498342
+Sending: {"id": 5007498342, "husband_id": 5007498342, "wife_id": 5016030135, "children": [5024577220, 5033108501, 4973499298, 4982038259, 4990307328]}
+Current: active threads / max count: 1 / 1
+Request: /
+Sending: {"start_family_id": 5007498342}
+Current: active threads / max count: 1 / 1
+Request: /start/6
+Creating family tree with 6 generations...
+Number of people  : 412
+Number of families: 63
+Sending: {"status":"OK"}
+Current: active threads / max count: 1 / 1
+Request: /family/5007498342
+Sending: {"id": 5007498342, "husband_id": 5007498342, "wife_id": 5016030135, "children": [5024577220, 5033108501, 4973499298, 4982038259]}
+Current: active threads / max count: 1 / 1
+Request: /
+Sending: {"start_family_id": 5007498342}
+Current: active threads / max count: 1 / 1
+Request: /start/6
+Creating family tree with 6 generations...
+Number of people  : 409
+Number of families: 63
+Sending: {"status":"OK"}
+Current: active threads / max count: 1 / 1
+Request: /family/5007498342
+Sending: {"id": 5007498342, "husband_id": 5007498342, "wife_id": 5016030135, "children": [5024577220, 5033108501]}
+Current: active threads / max count: 1 / 1
+Request: /
+Sending: {"start_family_id": 5007498342}
+Current: active threads / max count: 1 / 1
+Request: /start/6
+Creating family tree with 6 generations...
+Number of people  : 432
+Number of families: 63
+Sending: {"status":"OK"}
+Current: active threads / max count: 1 / 1
+Request: /family/5007498342
+Sending: {"id": 5007498342, "husband_id": 5007498342, "wife_id": 5016030135, "children": [5024577220, 5033108501]}
+Current: active threads / max count: 1 / 1
+Request: /
+Sending: {"start_family_id": 5007498342}
+Current: active threads / max count: 1 / 1
+Request: /start/6
+Creating family tree with 6 generations...
+Number of people  : 436
+Number of families: 63
+Sending: {"status":"OK"}
+Current: active threads / max count: 1 / 1
+Request: /family/5007498342
+Sending: {"id": 5007498342, "husband_id": 5007498342, "wife_id": 5016030135, "children": [5024577220, 5033108501, 4973499298]}
+Current: active threads / max count: 1 / 1
+Request: /
+Sending: {"start_family_id": 5007498342}
+Current: active threads / max count: 1 / 1
+Request: /start/6
+Creating family tree with 6 generations...
+Number of people  : 448
+Number of families: 63
+Sending: {"status":"OK"}
+Current: active threads / max count: 1 / 1
+Request: /family/5007498342
+Sending: {"id": 5007498342, "husband_id": 5007498342, "wife_id": 5016030135, "children": [5024577220, 5033108501, 4973499298, 4982038259, 4990307328, 4998855505, 5074495214, 5081994303]}
+Current: active threads / max count: 1 / 1
+Request: /
+Sending: {"start_family_id": 5007498342}
+Current: active threads / max count: 1 / 1
+Request: /start/6
+Creating family tree with 6 generations...
+Number of people  : 434
+Number of families: 63
+Sending: {"status":"OK"}
+Current: active threads / max count: 1 / 1
+Request: /family/5007498342
+Sending: {"id": 5007498342, "husband_id": 5007498342, "wife_id": 5016030135, "children": [5024577220, 5033108501, 4973499298, 4982038259, 4990307328, 4998855505, 5074495214]}
+Current: active threads / max count: 1 / 1
+Request: /
+Sending: {"start_family_id": 5007498342}
+Current: active threads / max count: 1 / 1
+Request: /start/6
+Creating family tree with 6 generations...
+Number of people  : 433
+Number of families: 63
+Sending: {"status":"OK"}
+Current: active threads / max count: 1 / 1
+Request: /family/5007498342
+Sending: {"id": 5007498342, "husband_id": 5007498342, "wife_id": 5016030135, "children": [5024577220, 5033108501, 4973499298]}
+Current: active threads / max count: 1 / 1
+Request: /
+Sending: {"start_family_id": 5007498342}
+Current: active threads / max count: 1 / 1
+Request: /start/6
+Creating family tree with 6 generations...
+Number of people  : 453
+Number of families: 63
+Sending: {"status":"OK"}
+Current: active threads / max count: 1 / 1
+Request: /family/5007498342
+Sending: {"id": 5007498342, "husband_id": 5007498342, "wife_id": 5016030135, "children": [5024577220, 5033108501, 4973499298, 4982038259, 4990307328, 4998855505, 5074495214, 5081994303]}
+Current: active threads / max count: 1 / 1
+Request: /
+Sending: {"start_family_id": 5007498342}
+Current: active threads / max count: 1 / 1
+Request: /start/6
+Creating family tree with 6 generations...
+Number of people  : 426
+Number of families: 63
+Sending: {"status":"OK"}
+Current: active threads / max count: 1 / 1
+Request: /
+Sending: {"start_family_id": 5007498342}
+Current: active threads / max count: 1 / 1
+Request: /start/6
+Creating family tree with 6 generations...
+Number of people  : 448
+Number of families: 63
+Sending: {"status":"OK"}
+Current: active threads / max count: 1 / 1
+Request: /family/5007498342
+Sending: {"id": 5007498342, "husband_id": 5007498342, "wife_id": 5016030135, "children": [5024577220, 5033108501, 4973499298, 4982038259, 4990307328]}
+Current: active threads / max count: 1 / 1
+Request: /
+Sending: {"start_family_id": 5007498342}
+Current: active threads / max count: 1 / 1
+Request: /start/6
+Creating family tree with 6 generations...
+Number of people  : 428
+Number of families: 63
+Sending: {"status":"OK"}
+Current: active threads / max count: 1 / 1
+Request: /family/5007498342
+Sending: {"id": 5007498342, "husband_id": 5007498342, "wife_id": 5016030135, "children": [5024577220, 5033108501, 4973499298, 4982038259]}
+Current: active threads / max count: 1 / 1
+Request: /
+Sending: {"start_family_id": 5007498342}
+Current: active threads / max count: 1 / 1
+Request: /start/6
+Creating family tree with 6 generations...
+Number of people  : 476
+Number of families: 63
+Sending: {"status":"OK"}
+Current: active threads / max count: 1 / 1
+Request: /family/5007498342
+Sending: {"id": 5007498342, "husband_id": 5007498342, "wife_id": 5016030135, "children": [5024577220, 5033108501, 4973499298, 4982038259, 4990307328, 4998855505, 5074495214, 5081994303]}
