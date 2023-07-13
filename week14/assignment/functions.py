@@ -122,42 +122,43 @@ def depth_fs_pedigree(family_id, tree):
 
 # -----------------------------------------------------------------------------
 def breadth_fs_pedigree(start_id, tree):
-    queue = list()
-    queue.append(start_id)
+    id = queue.Queue()
+    id.put(start_id)
+
     
-    while len(queue) > 0:
-        fam_thread = list()
-        for fam_id in queue:
-            if fam_id == None or tree.does_family_exist(fam_id):
-                continue
-            fam_thread.append((fam_id, Request_thread(f'{TOP_API_URL}/family/{fam_id}')))
-        for _, j in fam_thread:
-            j.start()
-        for _, j in fam_thread:
-            j.join() 
-        for fam_id, k in fam_thread:
-            pers_details = list()
-            family = Family(k.get_response())   
-            tree.add_family(family)
-            if family.get_husband():
-                pers_details.append((family.get_husband(), Request_thread(f'{TOP_API_URL}/person/{family.get_husband()}')))
-            if family.get_wife():
-                pers_details.append((family.get_wife(), Request_thread(f'{TOP_API_URL}/person/{family.get_wife()}')))
-            for child_id in family.get_children():
-                pers_details.append((child_id, Request_thread(f'{TOP_API_URL}/person/{child_id}')))
-                
-        queue = list()
-        for _, j in pers_details:
-            j.start()
-        for _, j in pers_details:
-            j.join() 
-        
-        for _, pers in pers_details:
-            person = Person(pers.get_response())
-            if tree.does_person_exist(person.get_id()):
-                continue
-            tree.add_person(person)
-            queue.append(person.get_parentid())
+    while id.qsize() > 0:
+        fam_thread = []
+        fam_id = id.get()
+
+        def family_thread():
+            if not tree.does_family_exist(fam_id):
+                family_request =  Request_thread(f'{TOP_API_URL}/family/{fam_id}')
+
+                family_request.start()
+                family_request.join() 
+                family = Family(family_request.get_response())   
+                tree.add_family(family)
+                pers_details = list()
+                if family.get_husband():
+                    pers_details.append((family.get_husband(), Request_thread(f'{TOP_API_URL}/person/{family.get_husband()}')))
+                if family.get_wife():
+                    pers_details.append((family.get_wife(), Request_thread(f'{TOP_API_URL}/person/{family.get_wife()}')))
+                for child_id in family.get_children():
+                    if not tree.does_person_exist(child_id):
+                        pers_details.append((child_id, Request_thread(f'{TOP_API_URL}/person/{child_id}')))
+
+                for _, j in pers_details:
+                    j.start()
+                for _, j in pers_details:
+                    j.join() 
+
+                for _, pers in pers_details:
+                    person = Person(pers.get_response())
+                    if tree.does_person_exist(person.get_id()):
+                        continue
+                    tree.add_person(person)
+                    if person.get_parentid() != None:
+                        id.put(person.get_parentid())
 
 # -----------------------------------------------------------------------------
 def breadth_fs_pedigree_limit5(family_id, tree):
