@@ -75,8 +75,8 @@ def main():
             generations = int(parts[1])
 
             if part_to_run == 1:
-                # run_part(log, start_id, generations, DFS, depth_fs_pedigree)
-                print('working')
+                run_part(log, start_id, generations, DFS, depth_fs_pedigree)
+                # print("work")
             elif part_to_run == 2:
                 run_part(log, start_id, generations, BFS, breadth_fs_pedigree)
             elif part_to_run == 3:
