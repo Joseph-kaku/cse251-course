@@ -1,549 +1,536 @@
-18:32:15| 
+18:32:46| 
 
-18:32:15| #############################################
-18:32:15| Depth First Search: 6 generations
-18:32:15| #############################################
-18:32:19| 3.92801081
-18:32:20| 
-
-
-18:32:20| ************* TREE DISPLAY *************
-18:32:20| Family id: 5007069497
-18:32:20|   Husband: Daniel, 20-12-1820
-18:32:20|   Wife: Ella, 8-3-1961
-18:32:20|   Husband Parents: Ezra and Avery
-18:32:20|   Wife Parents: Benjamin and Isabella
-18:32:20|   Children: Theodore, Leah
-18:32:20| Family id: 5014918573
-18:32:20|   Husband: Ezra, 29-3-1878
-18:32:20|   Wife: Avery, 25-2-1948
-18:32:20|   Husband Parents: Andrew and Hannah
-18:32:20|   Wife Parents: Luke and Violet
-18:32:20|   Children: Zoe, Mason, Mila, Avery, Jaxon, Theodore, Eleanor, Riley, Daniel
-18:32:20| Family id: 4923467705
-18:32:20|   Husband: Benjamin, 8-11-1982
-18:32:20|   Wife: Isabella, 14-2-1885
-18:32:20|   Husband Parents: Wyatt and Lillian
-18:32:20|   Wife Parents: Lucas and Sofia
-18:32:20|   Children: Aurora, Owen, Isabella, Michael, Luna, Ella
-18:32:20| Family id: 4930529837
-18:32:20|   Husband: Wyatt, 5-1-1987
-18:32:20|   Wife: Lillian, 29-3-1772
-18:32:20|   Husband Parents: Christopher and Zoey
-18:32:20|   Wife Parents: Christopher and Violet
-18:32:20|   Children: David, Grayson, Benjamin
-18:32:20| Family id: 5316968313
-18:32:20|   Husband: Lucas, 1-9-1835
-18:32:20|   Wife: Sofia, 20-10-1778
-18:32:20|   Husband Parents: Wyatt and Abigail
-18:32:20|   Wife Parents: Alexander and Aurora
-18:32:20|   Children: Audrey, Chloe, Dylan, Andrew, Isabella
-18:32:20| Family id: 4872580461
-18:32:20|   Husband: Luke, 3-5-2013
-18:32:20|   Wife: Violet, 13-11-1836
-18:32:20|   Husband Parents: Joshua and Stella
-18:32:20|   Wife Parents: Thomas and Hannah
-18:32:20|   Children: Chloe, Elijah, Aurora, Sophia, Avery
-18:32:20| Family id: 5022767121
-18:32:20|   Husband: Andrew, 29-10-1796
-18:32:20|   Wife: Hannah, 9-3-1949
-18:32:20|   Husband Parents: Andrew and Ava
-18:32:20|   Wife Parents: Lincoln and Mila
-18:32:20|   Children: Victoria, Lucas, Mason, Addison, Ellie, Ezra
-18:32:20| Family id: 5261755981
-18:32:20|   Husband: Christopher, 13-9-1824
-18:32:20|   Wife: Violet, 8-2-1867
-18:32:20|   Husband Parents: Theodore and Olivia
-18:32:20|   Wife Parents: Lucas and Riley
-18:32:20|   Children: Aria, Henry, Wyatt, Riley, Matthew, Lucas, Matthew, Lillian
-18:32:20| Family id: 5273923217
-18:32:20|   Husband: Christopher, 23-11-1783
-18:32:20|   Wife: Zoey, 5-8-1792
-18:32:20|   Husband Parents: Luke and Willow
-18:32:20|   Wife Parents: Asher and Amelia
-18:32:20|   Children: Amelia, Matthew, Wyatt
-18:32:20| Family id: 4935634573
-18:32:20|   Husband: Thomas, 14-7-1836
-18:32:20|   Wife: Hannah, 16-8-1791
-18:32:20|   Husband Parents: Thomas and Emma
-18:32:20|   Wife Parents: Anthony and Ellie
-18:32:20|   Children: Aiden, Aurora, Wyatt, Addison, Violet
-18:32:20| Family id: 5085820337
-18:32:20|   Husband: Lincoln, 15-11-1823
-18:32:20|   Wife: Mila, 10-1-1883
-18:32:20|   Husband Parents: Grayson and Elizabeth
-18:32:20|   Wife Parents: Thomas and Mila
-18:32:20|   Children: Aubrey, Nora, Jacob, Zoey, Hannah
-18:32:20| Family id: 5111584921
-18:32:20|   Husband: Alexander, 21-8-1793
-18:32:20|   Wife: Aurora, 13-5-1906
-18:32:20|   Husband Parents: Gabriel and Zoey
-18:32:20|   Wife Parents: Joseph and Sophia
-18:32:20|   Children: Mason, Audrey, Charlotte, Ezra, Mason, Owen, Matthew, Sofia
-18:32:20| Family id: 4880437713
-18:32:20|   Husband: Joshua, 10-7-1882
-18:32:20|   Wife: Stella, 8-2-1979
-18:32:20|   Husband Parents: Dylan and Stella
-18:32:20|   Wife Parents: Henry and Mila
-18:32:20|   Children: Anthony, Julian, Logan, Leo, Daniel, Emilia, Scarlett, Luke
-18:32:20| Family id: 5324809197
-18:32:20|   Husband: Wyatt, 22-1-1961
-18:32:20|   Wife: Abigail, 11-9-1890
-18:32:20|   Husband Parents: Ezra and Audrey
-18:32:20|   Wife Parents: Joshua and Olivia
-18:32:20|   Children: John, Everly, Layla, Mason, Aria, Christopher, Josiah, Lucas
-18:32:20| Family id: 5030616197
-18:32:20|   Husband: Andrew, 10-9-1894
-18:32:20|   Wife: Ava, 17-1-1886
-18:32:20|   Husband Parents: Josiah and Addison
-18:32:20|   Wife Parents: Leo and Stella
-18:32:20|   Children: Grace, Layla, Aubrey, Matthew, Lillian, Andrew
-18:32:20| Family id: 5281770757
-18:32:20|   Husband: Luke, 24-9-1936
-18:32:20|   Wife: Willow, 3-11-1942
-18:32:20|   Husband Parents: Michael and Luna
-18:32:20|   Wife Parents: Joshua and Amelia
-18:32:20|   Children: Jaxon, Abigail, Matthew, Madison, Sofia, Christopher
-18:32:20| Family id: 5238216929
-18:32:20|   Husband: Asher, 28-1-1941
-18:32:20|   Wife: Amelia, 15-9-2015
-18:32:20|   Husband Parents: Jack and Bella
-18:32:20|   Wife Parents: Elijah and Luna
-18:32:20|   Children: Avery, Alexander, Grace, Logan, Sophia, William, Zoey
-18:32:20| Family id: 5360529821
-18:32:20|   Husband: Lucas, 16-10-1914
-18:32:20|   Wife: Riley, 8-4-1836
-18:32:20|   Husband Parents: Gabriel and Elizabeth
-18:32:20|   Wife Parents: Alexander and Scarlett
-18:32:20|   Children: Jayden, Riley, Luke, Noah, Lily, Violet
-18:32:20| Family id: 5336975921
-18:32:20|   Husband: Theodore, 28-7-1818
-18:32:20|   Wife: Olivia, 4-7-1852
-18:32:20|   Husband Parents: Wyatt and Mila
-18:32:20|   Wife Parents: Mason and Avery
-18:32:20|   Children: Theodore, Natalie, Levi, Christopher
-18:32:20| Family id: 4943482225
-18:32:20|   Husband: Thomas, 17-3-1873
-18:32:20|   Wife: Emma, 15-2-1835
-18:32:20|   Husband Parents: Ethan and Stella
-18:32:20|   Wife Parents: Gabriel and Ellie
-18:32:20|   Children: Carter, Grayson, Mateo, Thomas
-18:32:20| Family id: 4899928285
-18:32:20|   Husband: Anthony, 26-11-1947
-18:32:20|   Wife: Ellie, 12-5-1765
-18:32:20|   Husband Parents: Henry and Nora
-18:32:20|   Wife Parents: Andrew and Penelope
-18:32:20|   Children: Chloe, Riley, Madison, Nora, Mia, Benjamin, Elizabeth, Hannah
-18:32:20| Family id: 5093668901
-18:32:20|   Husband: Grayson, 11-12-1966
-18:32:20|   Wife: Elizabeth, 27-9-1986
-18:32:20|   Husband Parents: Joshua and Emilia
-18:32:20|   Wife Parents: Julian and Riley
-18:32:20|   Children: Aiden, Harper, Ezra, Abigail, Logan, Michael, Lincoln
-18:32:20| Family id: 5050099585
-18:32:20|   Husband: Thomas, 16-4-1872
-18:32:20|   Wife: Mila, 29-8-1801
-18:32:20|   Husband Parents: Logan and Ella
-18:32:20|   Wife Parents: Matthew and Scarlett
-18:32:20|   Children: Matthew, Violet, Matthew, Mila
-18:32:20| Family id: 4844716833
-18:32:20|   Husband: Henry, 30-7-1766
-18:32:20|   Wife: Mila, 15-6-1874
-18:32:20|   Husband Parents: Samuel and Aurora
-18:32:20|   Wife Parents: Wyatt and Layla
-18:32:20|   Children: Josiah, Ezra, Stella
-18:32:20| Family id: 4994895573
-18:32:20|   Husband: Leo, 9-7-1860
-18:32:20|   Wife: Stella, 1-4-1852
-18:32:20|   Husband Parents: Andrew and Penelope
-18:32:20|   Wife Parents: Mason and Madison
-18:32:20|   Children: Samuel, Emilia, Victoria, Owen, Olivia, Lincoln, Ava
-18:32:20| Family id: 4971348745
-18:32:20|   Husband: Josiah, 30-4-1840
-18:32:20|   Wife: Addison, 15-11-1791
-18:32:20|   Husband Parents: Josiah and Nora
-18:32:20|   Wife Parents: Noah and Sofia
-18:32:20|   Children: Ava, Natalie, Leo, Andrew
-18:32:20| Family id: 4888286277
-18:32:20|   Husband: Dylan, 20-8-1777
-18:32:20|   Wife: Stella, 7-2-1809
-18:32:20|   Husband Parents: Thomas and Emily
-18:32:20|   Wife Parents: Ezra and Sophia
-18:32:20|   Children: Ellie, Joshua, Luna, Joshua
-18:32:20| Family id: 5155138877
-18:32:20|   Husband: Joshua, 25-9-1996
-18:32:20|   Wife: Olivia, 9-5-2016
-18:32:20|   Husband Parents: Asher and Sofia
-18:32:20|   Wife Parents: Luke and Violet
-18:32:20|   Children: Alexander, Logan, Avery, Mateo, Isaac, Violet, Abigail
-18:32:20| Family id: 5119434509
-18:32:20|   Husband: Gabriel, 4-8-1840
-18:32:20|   Wife: Zoey, 20-6-1967
-18:32:20|   Husband Parents: Joshua and Bella
-18:32:20|   Wife Parents: Joseph and Bella
-18:32:20|   Children: Mason, Leah, Matthew, Riley, Alexander
-18:32:20| Family id: 5210344169
-18:32:20|   Husband: Joseph, 3-11-1761
-18:32:20|   Wife: Sophia, 18-10-1897
-18:32:20|   Husband Parents: Mason and Lucy
-18:32:20|   Wife Parents: Lincoln and Zoey
-18:32:20|   Children: Zoe, Lillian, Christopher, James, Josiah, Aurora
-18:32:20| Family id: 5332919889
-18:32:20|   Husband: Ezra, 23-2-1864
-18:32:20|   Wife: Audrey, 23-5-1900
-18:32:20|   Husband Parents: Benjamin and Lucy
-18:32:20|   Wife Parents: Joshua and Lucy
-18:32:20|   Children: Stella, Charlotte, Emily, Anthony, Ellie, Wyatt
-18:32:20| Family id: 5297476733
-18:32:20|   Husband: Joshua, 24-12-1767
-18:32:20|   Wife: Amelia, 4-11-1982
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: Riley, Natalie, Isabella, Benjamin, Luna, Eleanor, Willow, Zoey, Willow
-18:32:20| Family id: 5289628041
-18:32:20|   Husband: Michael, 27-5-1781
-18:32:20|   Wife: Luna, 29-4-1952
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: Penelope, James, Isaac, Luke
-18:32:20| Family id: 5253907417
-18:32:20|   Husband: Elijah, 19-10-1803
-18:32:20|   Wife: Luna, 27-12-1790
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: Lily, Stella, Wyatt, Nora, Andrew, Ella, Bella, Scarlett, Amelia
-18:32:20| Family id: 5344824997
-18:32:20|   Husband: Wyatt, 18-10-1866
-18:32:20|   Wife: Mila, 18-7-1969
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: Lucas, Levi, Camila, Mila, Willow, Noah, Grayson, Theodore
-18:32:20| Family id: 5246066517
-18:32:20|   Husband: Jack, 8-12-1978
-18:32:20|   Wife: Bella, 23-7-1820
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: Scarlett, Penelope, Ellie, Aria, Owen, Stella, Ava, Asher
-18:32:20| Family id: 5368378369
-18:32:20|   Husband: Gabriel, 10-12-1781
-18:32:20|   Wife: Elizabeth, 18-5-1882
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: Dylan, Henry, Lucas
-18:32:20| Family id: 4951339493
-18:32:20|   Husband: Ethan, 5-11-1826
-18:32:20|   Wife: Stella, 1-3-1892
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: Asher, Aria, Lucas, Thomas
-18:32:20| Family id: 4915618613
-18:32:20|   Husband: Andrew, 11-7-1939
-18:32:20|   Wife: Penelope, 12-10-1792
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: Theodore, Addison, Hazel, Ellie, Aiden, Addison, Alexander, Ellie
-18:32:20| Family id: 5309118709
-18:32:20|   Husband: Alexander, 12-6-1827
-18:32:20|   Wife: Scarlett, 27-7-1856
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: Leah, Wyatt, Sophia, Daniel, Riley
-18:32:20| Family id: 4907777857
-18:32:20|   Husband: Henry, 6-4-1871
-18:32:20|   Wife: Nora, 17-2-1988
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: Audrey, Lucas, David, Anthony
-18:32:20| Family id: 5352672553
-18:32:20|   Husband: Mason, 23-2-1795
-18:32:20|   Wife: Avery, 11-7-1966
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: David, Luna, Aria, Victoria, Luna, Benjamin, Audrey, Ava, Olivia
-18:32:20| Family id: 4959188073
-18:32:20|   Husband: Gabriel, 4-10-1961
-18:32:20|   Wife: Ellie, 10-9-1968
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: Zoe, Emma, Samuel, Eleanor, Emily, Willow, Emma
-18:32:20| Family id: 5034409129
-18:32:20|   Husband: Joshua, 4-9-1766
-18:32:20|   Wife: Emilia, 24-8-1775
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: Sophia, Scarlett, Samuel, Hannah, Lucas, Anthony, Aiden, Everly, Grayson
-18:32:20| Family id: 5057948277
-18:32:20|   Husband: Logan, 9-8-1787
-18:32:20|   Wife: Ella, 21-1-2007
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: Elizabeth, Anthony, Isabella, Thomas
-18:32:20| Family id: 5066059513
-18:32:20|   Husband: Matthew, 4-12-1826
-18:32:20|   Wife: Scarlett, 29-4-1955
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: Joseph, Elizabeth, Noah, Chloe, Natalie, Jackson, Jacob, Michael, Mila
-18:32:20| Family id: 5042250525
-18:32:20|   Husband: Julian, 24-11-2019
-18:32:20|   Wife: Riley, 10-2-1847
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: Ethan, Daniel, James, Michael, Emily, Dylan, Elizabeth
-18:32:20| Family id: 4860414489
-18:32:20|   Husband: Wyatt, 26-7-1954
-18:32:20|   Wife: Layla, 1-2-1794
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: Olivia, Sebastian, Mila, Mila
-18:32:20| Family id: 4852565909
-18:32:20|   Husband: Samuel, 14-12-1799
-18:32:20|   Wife: Aurora, 21-4-1982
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: Joshua, Theodore, Lily, Aubrey, Hannah, Amelia, Henry
-18:32:20| Family id: 4896135369
-18:32:20|   Husband: Thomas, 24-5-2017
-18:32:20|   Wife: Emily, 26-3-1865
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: Liam, Isabella, Dylan
-18:32:20| Family id: 4979197949
-18:32:20|   Husband: Josiah, 5-8-1924
-18:32:20|   Wife: Nora, 4-3-1814
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: Addison, Layla, David, Mia, Stella, Emily, Thomas, Emily, Josiah
-18:32:20| Family id: 4836875453
-18:32:20|   Husband: Ezra, 16-3-1815
-18:32:20|   Wife: Sophia, 14-11-2002
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: Amelia, Aria, Everly, Jackson, Hannah, Madison, Stella, Stella
-18:32:20| Family id: 4987046497
-18:32:20|   Husband: Noah, 3-4-1901
-18:32:20|   Wife: Sofia, 8-10-1970
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: Carter, Joshua, Matthew, Benjamin, Addison
-18:32:20| Family id: 5147289929
-18:32:20|   Husband: Joshua, 5-1-1861
-18:32:20|   Wife: Lucy, 5-1-1847
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: Emily, Amelia, Nora, Sophia, Nora, Benjamin, Leo, Audrey
-18:32:20| Family id: 5139442373
-18:32:20|   Husband: Benjamin, 30-3-1763
-18:32:20|   Wife: Lucy, 8-10-2008
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: Ethan, Zoey, Eleanor, Jaxon, Zoe, Sofia, Natalie, Wyatt, Ezra
-18:32:20| Family id: 5077971405
-18:32:20|   Husband: Mason, 4-12-1914
-18:32:20|   Wife: Madison, 5-11-1927
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: Dylan, Ezra, Michael, Bella, Avery, Joseph, Elijah, Stella
-18:32:20| Family id: 5202495077
-18:32:20|   Husband: Joseph, 12-5-1899
-18:32:20|   Wife: Bella, 6-8-1890
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: Aubrey, Chloe, Mia, Eleanor, Thomas, Zoey
-18:32:20| Family id: 5162996129
-18:32:20|   Husband: Asher, 31-7-1775
-18:32:20|   Wife: Sofia, 9-10-1901
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: Ezra, Jackson, Aurora, Leo, Sofia, Mia, Violet, Grayson, Joshua
-18:32:20| Family id: 5103735829
-18:32:20|   Husband: Luke, 12-3-1839
-18:32:20|   Wife: Violet, 10-8-1981
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: James, Everly, Elijah, Matthew, Isaac, Lincoln, Logan, Olivia
-18:32:20| Family id: 5226040769
-18:32:20|   Husband: Lincoln, 14-11-1909
-18:32:20|   Wife: Zoey, 20-9-1919
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: Sebastian, Madison, Henry, Alexander, Natalie, Amelia, Sophia
-18:32:20| Family id: 5070114137
-18:32:20|   Husband: Andrew, 20-1-1949
-18:32:20|   Wife: Penelope, 18-8-1783
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: Emma, Lily, Elijah, Evelyn, Leo
-18:32:20| Family id: 5218191709
-18:32:20|   Husband: Mason, 14-6-1864
-18:32:20|   Wife: Lucy, 8-12-1801
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: Aurora, Ella, Eleanor, Sofia, Joseph
-18:32:20| Family id: 5127275505
-18:32:20|   Husband: Joshua, 18-6-1979
-18:32:20|   Wife: Bella, 2-2-1755
-18:32:20|   Husband Parents: None
-18:32:20|   Wife Parents: None
-18:32:20|   Children: Henry, Luna, John, Grace, Grayson, Aubrey, Gabriel
-18:32:20| 
-18:32:20| Number of people                    : 454
-18:32:20| Number of families                  : 63
-18:32:20| Max generations                     : 6
-18:32:20| People connected to starting family : 454
-18:32:20| 
-18:32:20| total_time                    : 3.92801
-18:32:20| Generations                   : 6
-18:32:20| People % Families / second    : 131.61878
-18:32:20| 
-18:32:20| STATS        Retrieved | Server details
-18:32:20| People  :          454 |            454
-18:32:20| Families:           63 |             63
-18:32:20| API Calls            : 519
-18:32:20| Max number of threads: 118
-18:32:20| 
-
-18:32:20| #############################################
-18:32:20| Breadth First Search: 6 generations
-18:32:20| #############################################
-18:32:24| 4.42267602
-18:32:25| 
+18:32:46| #############################################
+18:32:46| Depth First Search: 6 generations
+18:32:46| #############################################
+18:32:50| 4.05764150
+18:32:50| 
 
 
-18:32:25| ************* TREE DISPLAY *************
-18:32:25| Family id: 5007069497
-18:32:25|   Husband: Logan, 19-5-1816
-18:32:25|   Wife: Addison, 3-8-1825
-18:32:25|   Husband Parents: Asher and Riley
-18:32:25|   Wife Parents: Matthew and Harper
-18:32:25|   Children: Thomas, Jacob, Emma, David, Luke
-18:32:25| Family id: 5014918573
-18:32:25|   Husband: Asher, 7-3-1992
-18:32:25|   Wife: Riley, 6-11-2002
-18:32:25|   Husband Parents: James and Aurora
-18:32:25|   Wife Parents: Anthony and Ellie
-18:32:25|   Children: Wyatt, Lily, Logan
-18:32:25| Family id: 4923467705
-18:32:25|   Husband: Matthew, 8-5-1820
-18:32:25|   Wife: Harper, 5-8-1824
-18:32:25|   Husband Parents: Jackson and Natalie
-18:32:25|   Wife Parents: Logan and Lily
-18:32:25|   Children: Eleanor, Jacob, Mason, Chloe, Julian, Victoria, Zoe, Harper, Addison
-18:32:25| Family id: 5022767121
-18:32:25|   Husband: James, 11-9-1757
-18:32:25|   Wife: Aurora, 20-5-1835
-18:32:25|   Husband Parents: Matthew and Camila
-18:32:25|   Wife Parents: Hudson and Olivia
-18:32:25|   Children: Sophia, Victoria, Jack, Matthew, Asher
-18:32:25| Family id: 5316968313
-18:32:25|   Husband: Logan, 3-12-1977
-18:32:25|   Wife: Lily, 18-5-1975
-18:32:25|   Husband Parents: Liam and Riley
-18:32:25|   Wife Parents: Julian and Lucy
-18:32:25|   Children: Grace, Stella, Hudson, Grayson, Harper
-18:32:25| Family id: 4930529837
-18:32:25|   Husband: Jackson, 21-8-1945
-18:32:25|   Wife: Natalie, 14-3-1927
-18:32:25|   Husband Parents: Grayson and Madison
-18:32:25|   Wife Parents: Liam and Harper
-18:32:25|   Children: Dylan, Joseph, Alexander, Sofia, Matthew
-18:32:25| Family id: 4872580461
-18:32:25|   Husband: Anthony, 17-1-1878
-18:32:25|   Wife: Ellie, 28-4-1798
-18:32:25|   Husband Parents: Aiden and Willow
-18:32:25|   Wife Parents: Mateo and Avery
-18:32:25|   Children: Sebastian, Samuel, Anthony, Amelia, Oliver, Harper, Aurora, Riley
-18:32:25| Family id: 5085820337
-18:32:25|   Husband: Hudson, 1-11-1928
-18:32:25|   Wife: Olivia, 15-6-2005
-18:32:25|   Husband Parents: Gabriel and Hazel
-18:32:25|   Wife Parents: Levi and Emma
-18:32:25|   Children: Bella, Henry, Noah, Gabriel, Aurora
-18:32:25| Family id: 5030616197
-18:32:25|   Husband: Matthew, 22-8-1966
-18:32:25|   Wife: Camila, 6-6-1993
-18:32:25|   Husband Parents: Samuel and Emma
-18:32:25|   Wife Parents: Benjamin and Willow
-18:32:25|   Children: Amelia, Zoe, Michael, James
-18:32:25| Family id: 5111584921
-18:32:25|   Husband: Julian, 8-6-1945
-18:32:25|   Wife: Lucy, 12-12-1770
-18:32:25|   Husband Parents: Owen and Isabella
-18:32:25|   Wife Parents: Dylan and Riley
-18:32:25|   Children: Lucy, James, Jaxon, Michael, Lucy, Scarlett, Lily
-18:32:25| Family id: 4935634573
-18:32:25|   Husband: Mateo, 30-3-1841
-18:32:25|   Wife: Avery, 12-9-2005
-18:32:25|   Husband Parents: Theodore and Aubrey
-18:32:25|   Wife Parents: Leo and Bella
-18:32:25|   Children: Jack, Leo, Stella, Nora, Hudson, Hudson, William, Ellie
-18:32:25| Family id: 5261755981
-18:32:25|   Husband: Liam, 23-6-1952
-18:32:25|   Wife: Harper, 8-9-1942
-18:32:25|   Husband Parents: David and Aurora
-18:32:25|   Wife Parents: David and Evelyn
-18:32:25|   Children: Aria, Hannah, Natalie
-18:32:25| Family id: 4880437713
-18:32:25|   Husband: Aiden, 19-3-1780
-18:32:25|   Wife: Willow, 5-10-1838
-18:32:25|   Husband Parents: Jack and Emily
-18:32:25|   Wife Parents: Oliver and Abigail
-18:32:25|   Children: Isaac, Grace, Anthony
-18:32:25| Family id: 5273923217
-18:32:25|   Husband: Grayson, 3-10-1839
-18:32:25|   Wife: Madison, 25-10-1801
-18:32:25|   Husband Parents: Thomas and Addison
-18:32:25|   Wife Parents: Noah and Chloe
-18:32:25|   Children: Emma, Andrew, Mason, Samuel, Lucas, Josiah, Jackson
-18:32:25| Family id: 5324809197
-18:32:25|   Husband: Liam, 7-2-1798
-18:32:25|   Wife: Riley, 7-4-1938
-18:32:25|   Husband Parents: Ethan and Amelia
-18:32:25|   Wife Parents: Jaxon and Lillian
-18:32:25|   Children: Aiden, Mason, Layla, Levi, Aurora, Olivia, Mateo, Grayson, Logan
-18:32:25| Family id: 4971348745
-18:32:25|   Husband: Samuel, 11-10-1800
-18:32:25|   Wife: Emma, 29-11-1989
-18:32:25|   Husband Parents: Aiden and Willow
-18:32:25|   Wife Parents: Wyatt and Layla
-18:32:25|   Children: Theodore, Ethan, Theodore, Daniel, Madison, Mason, Matthew
-18:32:25| Family id: 5050099585
-18:32:25|   Husband: Levi, 17-2-1959
-18:32:25|   Wife: Emma, 5-12-1837
-18:32:25|   Husband Parents: Anthony and Everly
-18:32:25|   Wife Parents: Jacob and Mila
-18:32:25|   Children: Mila, Lucas, Michael, Nora, Olivia
-18:32:25| Family id: 5360529821
-18:32:25|   Husband: David, 11-10-2014
-18:32:25|   Wife: Evelyn, 9-4-1987
-18:32:25|   Husband Parents: Luke and Stella
-18:32:25|   Wife Parents: Alexander and Audrey
-18:32:25|   Children: Charlotte, Theodore, Harper
-18:32:25| Family id: 5281770757
-18:32:25|   Husband: Thomas, 7-4-1858
-18:32:25|   Wife: Addison, 7-7-1908
-18:32:25|   Husband Parents: Hudson and Emilia
-18:32:25|   Wife Parents: Samuel and Mia
-18:32:25|   Children: Zoey, Lillian, Willow, Zoey, Noah, Logan, Evelyn, Zoey, Grayson
-18:32:25| Family id: 5336975921
-18:32:25|   Husband: David, 14-5-1901
-18:32:25|   Wife: Aurora, 4-10-1904
-18:32:25|   Husband Parents: Thomas and Aria
-18:32:25|   Wife Parents: Ethan and Bella
-18:32:25|   Children: Matthew, Julian, Willow, Noah, Benjamin, Alexander, Ethan, Liam
-18:32:25| Family id: 5238216929
-18:32:25|   Husband: Noah, 17-3-1921
-18:32:25|   Wife: Chloe, 30-5-1835
-18:32:25|   Husband Parents: Jaxon and Bella
-18:32:25|   Wife Parents: John and Nora
-18:32:25|   Children: Evelyn, Ella, Josiah, Audrey, Ellie, Daniel, Owen, Madison
-18:32:25| Family id: 5210344169
-18:32:25|   Husband: Dylan, 21-8-2007
-18:32:25|   Wife: Riley, 19-7-1889
-18:32:25|   Husband Parents: Benjamin and Olivia
-18:32:25|   Wife Parents: Sebastian and Natalie
-18:32:25|   Children: Jack, Olivia, Eleanor, Lucy
-18:32:25| Family id: 5119434509
-18:32:25|   Husband: Owen, 5-8-2010
-18:32:25|   Wife: Isabella, 26-5-1965
-18:32:25|   Husband Parents: Gabriel and Riley
+18:32:50| ************* TREE DISPLAY *************
+18:32:50| Family id: 5007069497
+18:32:50|   Husband: David, 20-11-1981
+18:32:50|   Wife: Avery, 2-9-1824
+18:32:50|   Husband Parents: Matthew and Victoria
+18:32:50|   Wife Parents: Aiden and Emily
+18:32:50|   Children: Hudson, Sophia
+18:32:50| Family id: 5014918573
+18:32:50|   Husband: Matthew, 23-6-1850
+18:32:50|   Wife: Victoria, 18-12-1852
+18:32:50|   Husband Parents: Christopher and Isabella
+18:32:50|   Wife Parents: Ethan and Olivia
+18:32:50|   Children: Riley, Zoey, Emily, Lincoln, Addison, Sebastian, Gabriel, David
+18:32:50| Family id: 4923467705
+18:32:50|   Husband: Aiden, 25-6-1954
+18:32:50|   Wife: Emily, 5-8-1763
+18:32:50|   Husband Parents: Jackson and Abigail
+18:32:50|   Wife Parents: Ezra and Scarlett
+18:32:50|   Children: Zoey, Sophia, Lillian, Theodore, Avery
+18:32:50| Family id: 4930529837
+18:32:50|   Husband: Jackson, 24-6-1823
+18:32:50|   Wife: Abigail, 11-11-1792
+18:32:50|   Husband Parents: Levi and Everly
+18:32:50|   Wife Parents: Joshua and Lily
+18:32:50|   Children: Bella, Daniel, Sebastian, David, Sofia, Aiden
+18:32:50| Family id: 5316968313
+18:32:50|   Husband: Ezra, 31-5-1977
+18:32:50|   Wife: Scarlett, 5-12-2005
+18:32:50|   Husband Parents: Theodore and Violet
+18:32:50|   Wife Parents: Aiden and Grace
+18:32:50|   Children: Victoria, Dylan, Isaac, Isaac, Isaac, Emily
+18:32:50| Family id: 4872580461
+18:32:50|   Husband: Ethan, 21-11-1967
+18:32:50|   Wife: Olivia, 23-9-1767
+18:32:50|   Husband Parents: James and Bella
+18:32:50|   Wife Parents: Grayson and Olivia
+18:32:50|   Children: Carter, Zoe, Victoria
+18:32:50| Family id: 5022767121
+18:32:50|   Husband: Christopher, 14-5-2007
+18:32:50|   Wife: Isabella, 16-3-1904
+18:32:50|   Husband Parents: Leo and Audrey
+18:32:50|   Wife Parents: Theodore and Abigail
+18:32:50|   Children: Dylan, Sophia, Chloe, Sofia, Matthew
+18:32:50| Family id: 5261755981
+18:32:50|   Husband: Joshua, 20-3-1908
+18:32:50|   Wife: Lily, 25-4-1799
+18:32:50|   Husband Parents: James and Grace
+18:32:50|   Wife Parents: Wyatt and Harper
+18:32:50|   Children: Emily, Michael, Audrey, Abigail
+18:32:50| Family id: 5273923217
+18:32:50|   Husband: Levi, 7-12-2002
+18:32:50|   Wife: Everly, 23-6-1810
+18:32:50|   Husband Parents: Josiah and Hannah
+18:32:50|   Wife Parents: Aiden and Lillian
+18:32:50|   Children: Levi, Aubrey, Victoria, Joshua, Jaxon, Aiden, Mason, Natalie, Jackson
+18:32:50| Family id: 4880437713
+18:32:50|   Husband: James, 10-9-1861
+18:32:50|   Wife: Bella, 18-2-1805
+18:32:50|   Husband Parents: Gabriel and Luna
+18:32:50|   Wife Parents: Ethan and Penelope
+18:32:50|   Children: Benjamin, Aurora, Evelyn, Ethan
+18:32:50| Family id: 5324809197
+18:32:50|   Husband: Theodore, 15-10-1923
+18:32:50|   Wife: Violet, 22-7-1909
+18:32:50|   Husband Parents: Josiah and Evelyn
+18:32:50|   Wife Parents: Thomas and Madison
+18:32:50|   Children: Chloe, Jaxon, Lily, Wyatt, Ezra
+18:32:50| Family id: 4935634573
+18:32:50|   Husband: Grayson, 20-12-1830
+18:32:50|   Wife: Olivia, 9-6-1777
+18:32:50|   Husband Parents: Mateo and Stella
+18:32:50|   Wife Parents: Thomas and Hazel
+18:32:50|   Children: Michael, Josiah, Olivia
+18:32:50| Family id: 5111584921
+18:32:50|   Husband: Aiden, 4-12-1834
+18:32:50|   Wife: Grace, 17-11-2017
+18:32:50|   Husband Parents: Joshua and Penelope
+18:32:50|   Wife Parents: Andrew and Scarlett
+18:32:50|   Children: Audrey, Ethan, Lucas, Emily, Hannah, Asher, Henry, Scarlett
+18:32:50| Family id: 5030616197
+18:32:50|   Husband: Leo, 25-3-1809
+18:32:50|   Wife: Audrey, 31-8-1892
+18:32:50|   Husband Parents: Leo and Aubrey
+18:32:50|   Wife Parents: Lucas and Evelyn
+18:32:50|   Children: David, Layla, Ezra, Grayson, Christopher
+18:32:50| Family id: 5085820337
+18:32:50|   Husband: Theodore, 18-6-2019
+18:32:50|   Wife: Abigail, 21-8-1888
+18:32:50|   Husband Parents: Elijah and Elizabeth
+18:32:50|   Wife Parents: Henry and Camila
+18:32:50|   Children: Riley, Michael, Mason, Isabella
+18:32:50| Family id: 5336975921
+18:32:50|   Husband: James, 4-4-1918
+18:32:50|   Wife: Grace, 9-2-1913
+18:32:50|   Husband Parents: David and Sophia
+18:32:50|   Wife Parents: Alexander and Grace
+18:32:50|   Children: Scarlett, Grayson, Mia, Penelope, Avery, Jack, Joshua
+18:32:50| Family id: 5360529821
+18:32:50|   Husband: Wyatt, 16-4-1769
+18:32:50|   Wife: Harper, 18-9-1940
+18:32:50|   Husband Parents: James and Emily
+18:32:50|   Wife Parents: Thomas and Mila
+18:32:50|   Children: Stella, Benjamin, Lillian, Luke, Asher, Emma, Stella, Ellie, Lily
+18:32:50| Family id: 4943482225
+18:32:50|   Husband: Mateo, 21-12-1790
+18:32:50|   Wife: Stella, 5-7-1840
+18:32:50|   Husband Parents: Isaac and Chloe
+18:32:50|   Wife Parents: Owen and Lucy
+18:32:50|   Children: Isabella, Elijah, David, Grayson
+18:32:50| Family id: 4899928285
+18:32:50|   Husband: Thomas, 9-12-1761
+18:32:50|   Wife: Hazel, 20-11-1770
+18:32:50|   Husband Parents: Sebastian and Eleanor
+18:32:50|   Wife Parents: Leo and Aria
+18:32:50|   Children: Violet, Hannah, Ethan, Olivia
+18:32:50| Family id: 5281770757
+18:32:50|   Husband: Josiah, 22-12-1779
+18:32:50|   Wife: Hannah, 15-10-1993
+18:32:50|   Husband Parents: Matthew and Amelia
+18:32:50|   Wife Parents: John and Sofia
+18:32:50|   Children: Luke, Penelope, Levi
+18:32:50| Family id: 4844716833
+18:32:50|   Husband: Ethan, 25-1-1874
+18:32:50|   Wife: Penelope, 1-8-1911
+18:32:50|   Husband Parents: John and Natalie
+18:32:50|   Wife Parents: Jaxon and Bella
+18:32:50|   Children: Michael, Gabriel, Violet, Bella
+18:32:50| Family id: 5050099585
+18:32:50|   Husband: Henry, 1-6-1915
+18:32:50|   Wife: Camila, 6-3-1949
+18:32:50|   Husband Parents: Carter and Emma
+18:32:50|   Wife Parents: Andrew and Aubrey
+18:32:50|   Children: Ethan, Leah, Joseph, Aiden, Luna, Mateo, Abigail
+18:32:50| Family id: 4994895573
+18:32:50|   Husband: Lucas, 10-1-1792
+18:32:50|   Wife: Evelyn, 2-1-1884
+18:32:50|   Husband Parents: Samuel and Lucy
+18:32:50|   Wife Parents: Ezra and Charlotte
+18:32:50|   Children: Everly, Victoria, Zoey, Nora, Audrey
+18:32:50| Family id: 5119434509
+18:32:50|   Husband: Joshua, 12-1-1810
+18:32:50|   Wife: Penelope, 22-11-1863
+18:32:50|   Husband Parents: Ezra and Emma
+18:32:50|   Wife Parents: Mateo and Riley
+18:32:50|   Children: Grace, Leo, Samuel, Lincoln, Ezra, Aria, Noah, Aiden
+18:32:50| Family id: 4888286277
+18:32:50|   Husband: Gabriel, 1-8-2009
+18:32:50|   Wife: Luna, 25-11-1783
+18:32:50|   Husband Parents: Anthony and Riley
+18:32:50|   Wife Parents: Levi and Zoe
+18:32:50|   Children: Noah, Hudson, Sebastian, Samuel, Mia, Hazel, Avery, James
+18:32:50| Family id: 4971348745
+18:32:50|   Husband: Leo, 10-12-1898
+18:32:50|   Wife: Aubrey, 17-12-1950
+18:32:50|   Husband Parents: Andrew and Lillian
+18:32:50|   Wife Parents: Alexander and Ella
+18:32:50|   Children: Lucas, Emily, Sophia, Leo
+18:32:50| Family id: 5332919889
+18:32:50|   Husband: Josiah, 13-1-1966
+18:32:50|   Wife: Evelyn, 16-6-1916
+18:32:50|   Husband Parents: Wyatt and Stella
+18:32:50|   Wife Parents: Noah and Grace
+18:32:50|   Children: Audrey, Noah, Harper, Jaxon, Elijah, Theodore
+18:32:50| Family id: 5210344169
+18:32:50|   Husband: Andrew, 5-12-1964
+18:32:50|   Wife: Scarlett, 24-9-1798
+18:32:50|   Husband Parents: Noah and Layla
+18:32:50|   Wife Parents: Theodore and Bella
+18:32:50|   Children: Owen, Ethan, Grace
+18:32:50| Family id: 5093668901
+18:32:50|   Husband: Elijah, 25-11-1981
+18:32:50|   Wife: Elizabeth, 25-8-2002
+18:32:50|   Husband Parents: Sebastian and Leah
+18:32:50|   Wife Parents: Jack and Isabella
+18:32:50|   Children: Jayden, Stella, Theodore
+18:32:50| Family id: 5155138877
+18:32:50|   Husband: Thomas, 1-9-1895
+18:32:50|   Wife: Madison, 13-9-1831
+18:32:50|   Husband Parents: Gabriel and Aurora
+18:32:50|   Wife Parents: Lincoln and Elizabeth
+18:32:50|   Children: Hannah, Harper, Thomas, Jacob, Grace, Emilia, Violet
+18:32:50| Family id: 5238216929
+18:32:50|   Husband: Aiden, 13-1-1856
+18:32:50|   Wife: Lillian, 3-2-1866
+18:32:50|   Husband Parents: Grayson and Evelyn
+18:32:50|   Wife Parents: Owen and Riley
+18:32:50|   Children: Willow, Aria, Liam, John, Audrey, Everly
+18:32:50| Family id: 5344824997
+18:32:50|   Husband: David, 23-4-1939
+18:32:50|   Wife: Sophia, 22-1-1877
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Mila, Lily, Noah, Sofia, Willow, James
+18:32:50| Family id: 5368378369
+18:32:50|   Husband: James, 29-5-1860
+18:32:50|   Wife: Emily, 8-5-1756
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Chloe, Lillian, Wyatt
+18:32:50| Family id: 5309118709
+18:32:50|   Husband: Thomas, 11-1-1889
+18:32:50|   Wife: Mila, 7-8-1898
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Emily, Daniel, Jacob, Oliver, Mateo, Oliver, Harper
+18:32:50| Family id: 5352672553
+18:32:50|   Husband: Alexander, 26-1-1831
+18:32:50|   Wife: Grace, 9-4-1951
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Mia, Scarlett, Grace
+18:32:50| Family id: 4915618613
+18:32:50|   Husband: Leo, 14-10-1804
+18:32:50|   Wife: Aria, 2-5-1787
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Sebastian, Riley, Amelia, Isabella, Jayden, Olivia, Luke, Abigail, Hazel
+18:32:50| Family id: 4907777857
+18:32:50|   Husband: Sebastian, 18-12-1981
+18:32:50|   Wife: Eleanor, 18-5-1899
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Lincoln, Hudson, Emily, Jacob, Daniel, Thomas
+18:32:50| Family id: 4951339493
+18:32:50|   Husband: Isaac, 21-3-1767
+18:32:50|   Wife: Chloe, 12-7-1897
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Dylan, Lincoln, Emilia, William, David, Mateo
+18:32:50| Family id: 5289628041
+18:32:50|   Husband: Matthew, 11-8-1819
+18:32:50|   Wife: Amelia, 6-7-2000
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Mason, Amelia, Willow, James, Josiah
+18:32:50| Family id: 5297476733
+18:32:50|   Husband: John, 12-2-2009
+18:32:50|   Wife: Sofia, 16-8-2019
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Benjamin, Christopher, Hannah
+18:32:50| Family id: 4959188073
+18:32:50|   Husband: Owen, 20-11-1941
+18:32:50|   Wife: Lucy, 5-9-1784
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Anthony, Evelyn, Eleanor, Ella, Avery, Ava, William, Layla, Stella
+18:32:50| Family id: 5057948277
+18:32:50|   Husband: Carter, 5-9-1793
+18:32:50|   Wife: Emma, 31-8-1996
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Avery, John, Nora, Henry
+18:32:50| Family id: 5066059513
+18:32:50|   Husband: Andrew, 1-1-1907
+18:32:50|   Wife: Aubrey, 22-1-1957
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Julian, Willow, Gabriel, Emilia, Lillian, Hudson, Lucas, Isaac, Camila
+18:32:50| Family id: 5034409129
+18:32:50|   Husband: Sebastian, 9-10-1903
+18:32:50|   Wife: Leah, 17-9-1822
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Lucas, Mason, Joseph, Penelope, Elijah
+18:32:50| Family id: 5218191709
+18:32:50|   Husband: Noah, 17-5-2010
+18:32:50|   Wife: Layla, 6-1-1967
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: David, Mason, Camila, Lillian, Eleanor, Andrew
+18:32:50| Family id: 5070114137
+18:32:50|   Husband: Samuel, 28-2-1776
+18:32:50|   Wife: Lucy, 29-2-1816
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Asher, Logan, Lucas
+18:32:50| Family id: 5103735829
+18:32:50|   Husband: Lincoln, 7-12-1801
+18:32:50|   Wife: Elizabeth, 15-3-1943
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Noah, Lincoln, Emma, Ezra, Wyatt, John, Lucas, Aiden, Madison
+18:32:50| Family id: 5246066517
+18:32:50|   Husband: Grayson, 25-8-1941
+18:32:50|   Wife: Evelyn, 20-11-1777
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Dylan, Aria, Nora, Ethan, Bella, Aiden
+18:32:50| Family id: 4852565909
+18:32:50|   Husband: John, 14-5-1980
+18:32:50|   Wife: Natalie, 28-4-1878
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Elizabeth, Christopher, Matthew, Ethan
+18:32:50| Family id: 4896135369
+18:32:50|   Husband: Anthony, 4-2-1837
+18:32:50|   Wife: Riley, 15-6-1947
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Madison, Charlotte, Lincoln, Jacob, Chloe, Jackson, Gabriel
+18:32:50| Family id: 5147289929
+18:32:50|   Husband: Noah, 11-11-1873
+18:32:50|   Wife: Grace, 20-1-1837
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Hannah, James, Ellie, Aria, Liam, Henry, Amelia, Evelyn
+18:32:50| Family id: 5077971405
+18:32:50|   Husband: Ezra, 6-10-1925
+18:32:50|   Wife: Charlotte, 5-7-1983
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Hudson, Evelyn, Evelyn
+18:32:50| Family id: 5139442373
+18:32:50|   Husband: Wyatt, 3-10-1883
+18:32:50|   Wife: Stella, 29-7-1949
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Carter, Charlotte, Harper, Madison, Josiah
+18:32:50| Family id: 4860414489
+18:32:50|   Husband: Jaxon, 6-4-1872
+18:32:50|   Wife: Bella, 2-8-1886
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Thomas, Aria, Joseph, Sophia, Samuel, William, Penelope
+18:32:50| Family id: 5162996129
+18:32:50|   Husband: Gabriel, 21-12-1938
+18:32:50|   Wife: Aurora, 9-10-1772
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Mia, Eleanor, Thomas
+18:32:50| Family id: 4836875453
+18:32:50|   Husband: Levi, 16-5-1834
+18:32:50|   Wife: Zoe, 7-2-2005
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Ava, Everly, Leah, Joshua, Luna
+18:32:50| Family id: 5253907417
+18:32:50|   Husband: Owen, 18-4-1937
+18:32:50|   Wife: Riley, 28-12-1819
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Hannah, Addison, Penelope, Nora, Thomas, Luna, Ethan, Lillian
+18:32:50| Family id: 5127275505
+18:32:50|   Husband: Ezra, 16-11-1905
+18:32:50|   Wife: Emma, 24-9-1945
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Avery, Emma, Hazel, Everly, Sofia, Joshua
+18:32:50| Family id: 5226040769
+18:32:50|   Husband: Theodore, 26-1-1785
+18:32:50|   Wife: Bella, 23-6-1879
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Natalie, Lincoln, William, Daniel, Jacob, Liam, James, Scarlett
+18:32:50| Family id: 5202495077
+18:32:50|   Husband: Mateo, 2-4-2009
+18:32:50|   Wife: Riley, 10-10-1990
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Nora, Elizabeth, Willow, Penelope
+18:32:50| Family id: 5042250525
+18:32:50|   Husband: Jack, 24-5-1808
+18:32:50|   Wife: Isabella, 27-10-1791
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Mia, Carter, Mila, Emma, Liam, Elizabeth
+18:32:50| Family id: 4987046497
+18:32:50|   Husband: Alexander, 30-9-1790
+18:32:50|   Wife: Ella, 2-9-1863
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Christopher, Emilia, Luke, Thomas, Leah, Aubrey
+18:32:50| Family id: 4979197949
+18:32:50|   Husband: Andrew, 19-6-1937
+18:32:50|   Wife: Lillian, 16-3-1980
+18:32:50|   Husband Parents: None
+18:32:50|   Wife Parents: None
+18:32:50|   Children: Mateo, Benjamin, Christopher, Leo
+18:32:50| 
+18:32:50| Number of people                    : 412
+18:32:50| Number of families                  : 63
+18:32:50| Max generations                     : 6
+18:32:50| People connected to starting family : 412
+18:32:50| 
+18:32:50| total_time                    : 4.05764
+18:32:50| Generations                   : 6
+18:32:50| People % Families / second    : 117.06308
+18:32:50| 
+18:32:50| STATS        Retrieved | Server details
+18:32:50| People  :          412 |            412
+18:32:50| Families:           63 |             63
+18:32:50| API Calls            : 477
+18:32:50| Max number of threads: 112
+18:32:50| 
+
+18:32:50| #############################################
+18:32:50| Breadth First Search: 6 generations
+18:32:50| #############################################
+18:32:55| 4.41823315
+18:32:55| 
+
+
+18:32:55| ************* TREE DISPLAY *************
+18:32:55| Family id: 5007069497
+18:32:55|   Husband: Joseph, 5-8-1941
+18:32:55|   Wife: Amelia, 24-11-1827
+18:32:55|   Husband Parents: Benjamin and Addison
+18:32:55|   Wife Parents: Christopher and Eleanor
+18:32:55|   Children: Addison, David, Theodore, Emma, Eleanor, Elijah, Julian
+18:32:55| Family id: 4923467705
+18:32:55|   Husband: Christopher, 19-9-1973
+18:32:55|   Wife: Eleanor, 10-11-1960
+18:32:55|   Husband Parents: Christopher and Layla
+18:32:55|   Wife Parents: James and Violet
+18:32:55|   Children: Bella, Ava, Amelia
+18:32:55| Family id: 5014918573
+18:32:55|   Husband: Benjamin, 11-11-1938
+18:32:55|   Wife: Addison, 3-7-1857
+18:32:55|   Husband Parents: Leo and Camila
+18:32:55|   Wife Parents: Christopher and Chloe
+18:32:55|   Children: Noah, Penelope, Joseph
+18:32:55| Family id: 4930529837
+18:32:55|   Husband: Christopher, 9-1-1894
+18:32:55|   Wife: Layla, 1-3-1942
+18:32:55|   Husband Parents: Luke and Aria
+18:32:55|   Wife Parents: Isaac and Aubrey
+18:32:55|   Children: Abigail, Jaxon, Jayden, Liam, John, Bella, Christopher
+18:32:55| Family id: 5316968313
+18:32:55|   Husband: James, 14-5-1799
+18:32:55|   Wife: Violet, 26-9-1806
+18:32:55|   Husband Parents: Asher and Hazel
+18:32:55|   Wife Parents: Carter and Penelope
+18:32:55|   Children: Isaac, Lincoln, Thomas, Christopher, Asher, Andrew, Ethan, Ethan, Eleanor
+18:32:55| Family id: 4872580461
+18:32:55|   Husband: Christopher, 27-11-1954
+18:32:55|   Wife: Chloe, 12-8-1927
+18:32:55|   Husband Parents: Hudson and Scarlett
+18:32:55|   Wife Parents: Jack and Natalie
+18:32:55|   Children: Evelyn, Amelia, Hazel, Aurora, William, Addison
+18:32:55| Family id: 5022767121
+18:32:55|   Husband: Leo, 28-3-1949
+18:32:55|   Wife: Camila, 20-10-1831
+18:32:55|   Husband Parents: Benjamin and Victoria
+18:32:55|   Wife Parents: William and Riley
+18:32:55|   Children: Aria, Charlotte, Scarlett, Benjamin, Theodore, Mason, Benjamin
+18:32:55| Family id: 5261755981
+18:32:55|   Husband: Isaac, 18-1-1836
+18:32:55|   Wife: Aubrey, 28-12-1779
+18:32:55|   Husband Parents: Julian and Camila
+18:32:55|   Wife Parents: Lucas and Lucy
+18:32:55|   Children: Henry, Olivia, Owen, Isabella, Layla
+18:32:55| Family id: 5111584921
+18:32:55|   Husband: Carter, 10-8-1987
+18:32:55|   Wife: Penelope, 2-5-1958
+18:32:55|   Husband Parents: Levi and Willow
+18:32:55|   Wife Parents: Lincoln and Aria
+18:32:55|   Children: Ezra, Emilia, Emma, Jayden, Benjamin, Anthony, Jackson, Violet
+18:32:55| Family id: 4880437713
+18:32:55|   Husband: Hudson, 28-2-1786
+18:32:55|   Wife: Scarlett, 5-7-1897
+18:32:55|   Husband Parents: Logan and Olivia
+18:32:55|   Wife Parents: William and Zoe
+18:32:55|   Children: David, Chloe, Grayson, Audrey, Audrey, Wyatt, Amelia, Luna, Christopher
+18:32:55| Family id: 5273923217
+18:32:55|   Husband: Luke, 21-8-1921
+18:32:55|   Wife: Aria, 17-6-1879
+18:32:55|   Husband Parents: Luke and Amelia
+18:32:55|   Wife Parents: Lincoln and Evelyn
+18:32:55|   Children: Leah, Daniel, Dylan, Sophia, Grace, Jacob, Mason, Christopher
+18:32:55| Family id: 5324809197
+18:32:55|   Husband: Asher, 5-1-1766
+18:32:55|   Wife: Hazel, 9-9-1786
+18:32:55|   Husband Parents: Lincoln and Zoey
+18:32:55|   Wife Parents: Joseph and Penelope
+18:32:55|   Children: Olivia, David, Sebastian, Ezra, Elijah, Madison, James
+18:32:55| Family id: 4935634573
+18:32:55|   Husband: Jack, 30-10-1960
+18:32:55|   Wife: Natalie, 18-1-1754
+18:32:55|   Husband Parents: Anthony and Addison
+18:32:55|   Wife Parents: Leo and Violet
+18:32:55|   Children: Christopher, Luna, Joshua, Audrey, Scarlett, Chloe
+18:32:55| Family id: 5085820337
+18:32:55|   Husband: William, 13-5-1802
+18:32:55|   Wife: Riley, 22-8-1773
+18:32:55|   Husband Parents: Gabriel and Amelia
+18:32:55|   Wife Parents: Aiden and Violet
+18:32:55|   Children: Penelope, Theodore, Owen, Camila
+18:32:55| Family id: 5030616197
+18:32:55|   Husband: Benjamin, 26-4-1919
+18:32:55|   Wife: Victoria, 27-2-1993
+18:32:55|   Husband Parents: Owen and Emilia
+18:32:55|   Wife Parents: Theodore and Aubrey
+18:32:55|   Children: Mia, Jaxon, Zoey, Aubrey, Leo
+18:32:55| Family id: 5336975921
+18:32:55|   Husband: Julian, 30-6-1968
+18:32:55|   Wife: Camila, 12-6-1843
+18:32:55|   Husband Parents: Liam and Victoria
+18:32:55|   Wife Parents: Michael and Hazel
+18:32:55|   Children: Julian, Aubrey, Michael, Mateo, Addison, Lucas, Harper, Isaac
+18:32:55| Family id: 5360529821
+18:32:55|   Husband: Lucas, 23-6-1927
+18:32:55|   Wife: Lucy, 15-9-2006
+18:32:55|   Husband Parents: Noah and Ava
+18:32:55|   Wife Parents: David and Penelope
+18:32:55|   Children: Joseph, Zoey, Christopher, Aubrey
+18:32:55| Family id: 5093668901
+18:32:55|   Husband: Gabriel, 15-9-1761
+18:32:55|   Wife: Amelia, 25-1-1801
+18:32:55|   Husband Parents: Alexander and Elizabeth
+18:32:55|   Wife Parents: Levi and Lucy
+18:32:55|   Children: Lucas, Lily, Levi, Olivia, William
+18:32:55| Family id: 4971348745
+18:32:55|   Husband: Owen, 25-12-1901
+18:32:55|   Wife: Emilia, 7-10-2007
+18:32:55|   Husband Parents: Jaxon and Ellie
+18:32:55|   Wife Parents: Isaac and Aria
+18:32:55|   Children: Madison, Nora, Anthony, Addison, Benjamin
+18:32:55| Family id: 4994895573
+18:32:55|   Husband: Theodore, 12-10-1827
+18:32:55|   Wife: Aubrey, 19-5-1914
+18:32:55|   Husband Parents: Owen and Emily
+18:32:55|   Wife Parents: Joseph and Emily
+18:32:55|   Children: Elizabeth, Thomas, Joshua, Josiah, Camila, Hudson, Victoria
+18:32:55| Family id: 5210344169
+18:32:55|   Husband: Lincoln, 25-7-1978
+18:32:55|   Wife: Aria, 17-9-1773
