@@ -133,19 +133,19 @@ def breadth_fs_pedigree(start_id, tree):
                 tree.add_family(family)
                 pers_details = list()
                 if family.get_husband():
-                    pers_details.append((family.get_husband(), Request_thread(f'{TOP_API_URL}/person/{family.get_husband()}')))
+                    pers_details.append(Request_thread(f'{TOP_API_URL}/person/{family.get_husband()}'))
                 if family.get_wife():
-                    pers_details.append((family.get_wife(), Request_thread(f'{TOP_API_URL}/person/{family.get_wife()}')))
-                for child_id in family.get_children():
-                    if not tree.does_person_exist(child_id):
-                        pers_details.append((child_id, Request_thread(f'{TOP_API_URL}/person/{child_id}')))
+                    pers_details.append(Request_thread(f'{TOP_API_URL}/person/{family.get_wife()}'))
+                for child in family.get_children():
+                    if not tree.does_person_exist(child):
+                        pers_details.append(Request_thread(f'{TOP_API_URL}/person/{child}'))
 
-                for _, j in pers_details:
+                for j in pers_details:
                     j.start()
-                for _, j in pers_details:
+                for j in pers_details:
                     j.join() 
 
-                for _, pers in pers_details:
+                for pers in pers_details:
                     if not tree.does_person_exist(pers.get_response()['id']):
                         person = Person(pers.get_response())
                         tree.add_person(person)
