@@ -43,12 +43,16 @@ You will lose 10% if you don't detail your part 1 and part 2 code below
 
 Describe how to speed up part 1
 
-<Add your comments here>
-
+I created multiple threads and started them. 
+Then, I recursively called the Request_thread class in a loop. 
+However, in order to speed up the process, I waited for all the threads to finish 
+and then used the join method at the end.
 
 Describe how to speed up part 2
 
-<Add your comments here>
+I was trying to implement two while loops but unfortunately I kept running into erros.
+It works intermittently at the moment
+
 
 
 Extra (Optional) 10% Bonus to speed up part 3
